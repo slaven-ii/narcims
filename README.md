@@ -6,17 +6,15 @@ Virtual host should be pointed in the project root, .htaccess deals with fronted
 
 example:
 
-`
-<VirtualHost *:80>
-    ServerName www.pecine.loc
-    ServerAdmin slaven@fb.loc
-    DocumentRoot "/path-to-project/narcims"
-    ErrorLog "logs/pecine-error_log"
-    CustomLog "logs/pecine-access_log" common
-     <Directory "/path-to-project/narcims">
+    <VirtualHost *:80>
+        ServerName www.pecine.loc
+        ServerAdmin slaven@fb.loc
+        DocumentRoot "/path-to-project/narcims"
+        ErrorLog "logs/pecine-error_log"
+        CustomLog "logs/pecine-access_log" common
+        <Directory "/path-to-project/narcims">
             Options Indexes FollowSymLinks Includes execCGI
             AllowOverride All
             Require all granted
         </Directory>
-
-</VirtualHost>`
+    </VirtualHost>
