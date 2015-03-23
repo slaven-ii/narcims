@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: st00ne1
+ * Date: 22/03/15
+ * Time: 16:23
+ */
+
 namespace backend\controllers;
 
 use Yii;
@@ -6,12 +13,12 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use common\models\LoginForm;
 use yii\filters\VerbFilter;
-use common\narci;
+use common\narci\Narci;
 
 /**
  * Site controller
  */
-class SiteController extends Controller
+class PagesController extends Controller
 {
     /**
      * @inheritdoc
@@ -56,29 +63,15 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
-    }
-
-    public function actionLogin()
-    {
-        if (!\Yii::$app->user->isGuest) {
-            return $this->goHome();
+        $templates = Narci::getTemplatesList();
+        foreach ($templates as $template) {
+            $tmp = $template;
+            break;
         }
 
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        } else {
-            return $this->render('login', [
-                'model' => $model,
-            ]);
-        }
+        $path = '@app' . $tmp->path . '/' .$tmp->file;
+        //var_dump($path); die();
+        return $this->render($path, array('templates' => $templates));
     }
 
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
-
-        return $this->goHome();
-    }
 }
