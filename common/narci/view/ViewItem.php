@@ -15,10 +15,10 @@ class ViewItem {
     
     public function __construct($array)
     {
-        var_dump($array);
+        //var_dump($array);
     }
 
     public function render(){
-        
+        echo 'evo mee';
     }
 }

@@ -2,7 +2,6 @@
 /* @var $this common\components\View */
 $this->title = 'My Yii Application';
 
-$this->item(array('marko' => 'tj'))
 ?>
 <div id="page-wrapper" style="min-height: 419px;">
     <div class="row">

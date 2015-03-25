@@ -11,15 +11,19 @@ namespace backend\controllers;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use common\models\LoginForm;
+use backend\models\TemplateList;
 use yii\filters\VerbFilter;
 use common\narci\Narci;
+use yii\helpers\Url;
+
 
 /**
  * Site controller
  */
 class PagesController extends Controller
 {
+    public $layout = 'pages';
+
     /**
      * @inheritdoc
      */
@@ -30,11 +34,11 @@ class PagesController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['login', 'error', 'page'],
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index'],
+                        'actions' => ['logout', 'index', 'page'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -65,13 +69,35 @@ class PagesController extends Controller
     {
         $templates = Narci::getTemplatesList();
         foreach ($templates as $template) {
-            $tmp = $template;
-            break;
+            $templates[$template->name] = $template;
+        }
+        $model = new TemplateList();
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $route = Yii::$app->urlManager->createUrl(['pages/page', 'template' => $model->template]);
+            return $this->redirect($route,302);
         }
 
-        $path = '@app' . $tmp->path . '/' .$tmp->file;
-        //var_dump($path); die();
-        return $this->render($path, array('templates' => $templates));
+        return $this->render('choose', ['model' => $model]);
+    }
+
+    public function actionPage()
+    {
+        $templates = Narci::getTemplatesList();
+        foreach ($templates as $template) {
+            $templates[$template->name] = $template;
+        }
+
+        $template = Yii::$app->getRequest()->getQueryParam('template');
+
+        $path = '@app' . $templates[$template]->path . '/' .$templates[$template]->file;
+
+        $viewData = $this->renderPartial($path);
+
+        $items = $this->getView()->getItems();
+        var_dump($items);
+
+
     }
 
 }

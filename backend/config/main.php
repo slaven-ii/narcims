@@ -36,6 +36,9 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'view' => [
+            'class' => 'common\components\BackendView'
+        ]
     ],
     'params' => $params,
 ];

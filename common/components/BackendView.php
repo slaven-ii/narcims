@@ -11,27 +11,21 @@
 namespace common\components;
 
 use yii\widgets\ActiveForm;
-use yii\widgets\ActiveField;
-use common\narci\view\ViewItem;
+use common\components\NarciView;
 use common\narci\form\NarciForm;
 
-class View extends \yii\web\View {
-
-    public $bodyId;
-    public $items = array();
-
-    private $formModel;
-    private $form;
+class BackendView extends NarciView {
 
     /* Yii allows you to add magic getter methods by prefacing method names with "get" */
 
+    /*
     public function init()
     {
         $formModel = new NarciForm();
         $this->formModel = $formModel;
         parent::init();
     }
-
+*/
     /**
      * This method is invoked right before [[renderFile()]] renders a view file.
      * The default implementation will trigger the [[EVENT_BEFORE_RENDER]] event.
@@ -40,6 +34,7 @@ class View extends \yii\web\View {
      * @param array $params the parameter array passed to the [[render()]] method.
      * @return boolean whether to continue rendering the view file.
      */
+    /*
     public function beforeRender($viewFile, $params)
     {
         $form = ActiveForm::begin([
@@ -50,7 +45,7 @@ class View extends \yii\web\View {
         $this->form = $form;
         return parent::beforeRender($viewFile, $params);
     }
-
+*/
     /**
      * This method is invoked right after [[renderFile()]] renders a view file.
      * The default implementation will trigger the [[EVENT_AFTER_RENDER]] event.
@@ -60,26 +55,19 @@ class View extends \yii\web\View {
      * @param string $output the rendering result of the view file. Updates to this parameter
      * will be passed back and returned by [[renderFile()]].
      */
+    /*
     public function afterRender($viewFile, $params, &$output)
     {
         parent::afterRender($viewFile, $params, $output);
         ActiveForm::end();
     }
+*/
 
-    public function getBodyIdAttribute() {
-        return ($this->bodyId != '') ? 'id="' . $this->bodyId . '"' : '';
-    }
-
-    public function item($array){
-        $item = new ViewItem($array);
-        $this->items[] = $item;
-
-        $this->formModel->addAttribute($array['label']);
-        $obj =  $this->form->field($this->formModel, $array['label']);
-
-        echo $obj;
-        //$item->render();
+    public function item(array $array){
+        $this->addItem($array);
 
     }
+
+
 
 }
