@@ -11,13 +11,21 @@ namespace common\narci\view;
 
 class ViewItem {
 
-    public static $items = array();
+    public $data = array();
     
     public function __construct($array)
     {
-        //var_dump($array);
+        $this->data = $array;
     }
 
+    public function getName(){
+        return $this->data['name'];
+    }
+
+    public function getValidation(){
+        return $this->data['validation'];
+
+    }
     public function render(){
         echo 'evo mee';
     }

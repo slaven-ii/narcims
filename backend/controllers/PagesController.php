@@ -8,6 +8,8 @@
 
 namespace backend\controllers;
 
+use app\models\Page;
+use common\narci\form\NarciForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -95,8 +97,23 @@ class PagesController extends Controller
         $viewData = $this->renderPartial($path);
 
         $items = $this->getView()->getItems();
-        var_dump($items);
 
+        $model = new Page();
+        $model->loadItems($items);
+
+        if(Yii::$app->getRequest()->getIsPost()){
+            $params = Yii::$app->getRequest()->post();
+            $model->setAttributes($params['Page']);
+            if(!$model->save()){
+                var_dump($model->getErrors());
+            }
+
+        }
+
+        $data = Page::findOne(['id' => 1]);
+
+
+        return $this->render('page', ['model' => $data]);
 
     }
 

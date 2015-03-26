@@ -10,18 +10,19 @@
 
 /* @var $this common\components\View */
 
+
 $this->item(
     array(
-        'label' => 'naslov',
-        'type' => 'text',
+        'name' => 'naslov',
+        'validation' => [['naslov'], 'required'],
         'size' => '12'
     )
 );
 
 $this->item(
     array(
-        'label' => 'paragraf1',
-        'type' => 'text',
+        'name' => 'paragraf1',
+        'validation' => [['paragraf1'], 'required'],
         'size' => '6'
     )
 );
