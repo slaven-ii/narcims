@@ -16,10 +16,13 @@ return [
             'baseUrl' => ''
         ],
         'urlManager' => [
-
+            'rules' => [
+                "<action:[\w\-]+>" => "site/<action>",
+            ],
             'enablePrettyUrl' => true,
             'showScriptName' => false
         ],
+
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
