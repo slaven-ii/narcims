@@ -70,6 +70,26 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    public function actionDjelatnosti()
+    {
+        return $this->render('djelatnosti');
+    }
+
+    public function actionGalerija()
+    {
+        return $this->render('galerija');
+    }
+
+    public function actionOnama()
+    {
+        return $this->render('onama');
+    }
+
+    public function actionProizvodi()
+    {
+        return $this->render('proizvodi');
+    }
+
     public function actionLogin()
     {
         if (!\Yii::$app->user->isGuest) {
