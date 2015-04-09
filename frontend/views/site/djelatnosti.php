@@ -1,19 +1,66 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+$this->title = 'Pecina | Djelatnosti';
 ?>
+
+<?php echo $this->render('_navigation_mobile');?>
+
+<!--START NAV-->
 <nav class="main-nav">
 
-    <div class="container-24">
-        <div class="col-24">
-
-            <?php echo $this->render('_navigation'); ?>
+    <?php echo $this->render('_navigation');?>
 
 
+    <div class="subnav">
+        <div class="container-12">
+            <div class="col-12">
+                <div class="col-3">
+                    <article>
+                        <a href="" class="gridblock two" data-scroll-to="on" data-scroll-to-target=".scroll-1">
+                            <figure>
+                                <img src="static/ui/djelatnosti-1.jpg" alt="Image"/>
+                            </figure>
+                            <h4>Proizvodnja ukrasnog bilja</h4>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article>
+                        <a href="" class="gridblock two" data-scroll-to="on" data-scroll-to-target=".scroll-2">
+                            <figure>
+                                <img src="static/ui/djelatnosti-2.jpg" alt="Image"/>
+                            </figure>
+                            <h4>Prodaja supstrata</h4>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article>
+                        <a href="" class="gridblock two" data-scroll-to="on" data-scroll-to-target=".scroll-3">
+                            <figure>
+                                <img src="static/ui/djelatnosti-3.jpg" alt="Image"/>
+                            </figure>
+                            <h4>SAVJETOVANJE U ZAŠTITI BILJA</h4>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article>
+                        <a href="" class="gridblock two" data-scroll-to="on" data-scroll-to-target=".scroll-4">
+                            <figure>
+                                <img src="static/ui/djelatnosti-4.jpg" alt="Image"/>
+                            </figure>
+                            <h4>Uređenje vrtova</h4>
+                        </a>
+                    </article>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
+<!--END NAV-->
 
+<!--START HEADER-->
 <header class="work-header">
 
     <div class="header-bg home"></div>
@@ -22,18 +69,19 @@ $this->title = 'My Yii Application';
         <div class="inn">
             <div class="container-8">
                 <div class="col-8">
+                    <h1>Djelatnosti</h1>
                     <figure>
                         <span class="itemblock-header-grid two">
                             <span class="i-block">
                                 <span class="desc">
                                     <h4>Proizvodnja ukrasnog bilja</h4>
                                     <span class="text">
-                                        Proučite kako izgleda rast biljke od sjemenke do prekrasnog šarenog cvijeća
-                                        <br/>
-                                        ...
+                                        Proučite kako izgleda <br> rast biljke od ukorjenjavanja do prekrasnog ukrasnog bilja
                                     </span>
                                 </span>
-                                <img src="static/ui/djelatnosti-1.jpg" alt="Image"/>
+                                <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-1">
+                                    <img src="static/ui/djelatnosti-1.jpg" alt="Image"/>
+                                </a>
                             </span>
                             <span class="i-block">
                                 <span class="desc">
@@ -44,18 +92,22 @@ $this->title = 'My Yii Application';
                                         ...
                                     </span>
                                 </span>
-                                <img src="static/ui/djelatnosti-2.jpg" alt="Image"/>
+                                <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-2">
+                                    <img src="static/ui/djelatnosti-2.jpg" alt="Image"/>
+                                </a>
                             </span>
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>SAVJETOVANJE U ZAŠTITI BILJA</h4>
+                                    <h4>SAVJETOVANJE</h4>
                                     <span class="text">
-                                        Posjetite nas ili nazovite
+                                        U zaštiti bilja ili hortikulturi
                                         <br/>
                                         ...
                                     </span>
                                 </span>
-                                <img src="static/ui/djelatnosti-3.jpg" alt="Image"/>
+                                <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-3">
+                                    <img src="static/ui/djelatnosti-3.jpg" alt="Image"/>
+                                </a>
                             </span>
                             <span class="i-block">
                                 <span class="desc">
@@ -66,7 +118,9 @@ $this->title = 'My Yii Application';
                                         ...
                                     </span>
                                 </span>
-                                <img src="static/ui/djelatnosti-4.jpg" alt="Image"/>
+                                <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-4">
+                                    <img src="static/ui/djelatnosti-4.jpg" alt="Image"/>
+                                </a>
                             </span>
                         </span>
                     </figure>
@@ -90,8 +144,12 @@ $this->title = 'My Yii Application';
     </a>
 
 </header>
+<!--END HEADER-->
 
-<main id="main-content" class="scroll-1">
+<!--START MAIN-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-1" data-animation="on">
 
     <section class="green-line">
         <h3>
@@ -104,31 +162,31 @@ $this->title = 'My Yii Application';
             <div class="col-12">
                 <div class="col-4 one-col-text has-button">
                     <article class="left">
-                        <h4 class="green">Zavirite</h4>
+                        <h4 class="green">Površina</h4>
                         <span class="text">
-                            u tijek proizvodnje ukrasnog bilja <br/>  ...
+                            proizvodnje podijeljena je u šest neovisnih  potpuno opremljenih automatiziranih odjeljaka.
                         </span>
                         </span>
-                        <a class="btn classic" href="#">galerija</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/galerija'); ?>">galerija</a>
                     </article>
                 </div>
                 <div class="col-4 one-col-text">
                     <article class="middle">
                         <h4 class="green">
-                            <strong>proizvodnja</strong> U VRTLARIJI PECINA
+                            <strong>proizvodnja</strong>
                         </h4>
                         <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                            Planskim i pažljivim projektiranjem izgrađen je proizvodni kompleks sa svim obilježjima visoko sofisticirane tehnologije proizvodnje bilja.
                         </span>
                     </article>
                 </div>
                 <div class="col-4 one-col-text">
                     <article class="right">
                         <h4 class="green">
-                            lorem ipsum
+                            UKORJENJAVANJE
                         </h4>
                         <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                            mladih reznica bilja provodi se na stolovima s grijaćom podlogom, čime se osigurava optimalan odnos kvalitete i brzine proizvodnje.
                         </span>
                     </article>
                 </div>
@@ -137,22 +195,34 @@ $this->title = 'My Yii Application';
     </section>
 
     <section class="slider-wrapper">
-        <div class="extra-slider no-slider">
+        <div class="extra-slider is-slider">
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-3.jpg" alt="" width="1366" height="600">
+                        <img src="static/images/IMG_5308.JPG" alt="" width="1920" height="843">
+                    </li>
+                    <li>
+                        <img src="static/images/proizvodnja_3.jpg" alt="" width="1920" height="843">
+                    </li>
+                    <li>
+                        <img src="static/images/proizvodnja_5.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-2">
-            <i></i>
-        </a>
     </section>
 
-    <section class="green-line scroll-2">
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-2">
+        <i></i>
+    </a>
+
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-2" data-animation="on">
+
+    <section class="green-line">
         <h3>
             prodaja supstrata
         </h3>
@@ -165,10 +235,9 @@ $this->title = 'My Yii Application';
                     <article class="left">
                         <h4 class="green">stender pro</h4>
                         <span class="text">
-                            za profesionalce
+                            za profesionalce <br> - proizvodnja bilja, projektiranje i uređenje okoliša
                         </span>
                         </span>
-                        <a class="btn classic" href="#">galerija</a>
                     </article>
                 </div>
                 <div class="col-4 one-col-text">
@@ -177,7 +246,7 @@ $this->title = 'My Yii Application';
                             <strong>supstrati</strong>
                         </h4>
                         <span class="text">
-                            Proljetna proizvodnja ukrasnog bilja započinje početkom travnja i završava krajem lipnja.
+                            u vlastitoj proizvodnji koristimo isključivo specijalne supstrate njemačke tvrtke Stender
                         </span>
                     </article>
                 </div>
@@ -187,9 +256,8 @@ $this->title = 'My Yii Application';
                             stender hobby
                         </h4>
                         <span class="text">
-                            za ljubitelje prirode i uređenja vrtova.
+                            za ljubitelje prirodnih vrtova <br> - pravilan rast, cvat<br> miris i donosi plodove
                         </span>
-                        <a class="btn classic" href="#">webshop</a>
                     </article>
                 </div>
             </div>
@@ -197,24 +265,33 @@ $this->title = 'My Yii Application';
     </section>
 
     <section class="slider-wrapper">
-        <div class="extra-slider no-slider">
+        <div class="extra-slider is-slider">
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-4.jpg" alt="" width="1366" height="600">
+                        <img src="static/images/IMG_1695_prodaja supstrata.jpg" alt="" width="1920" height="843">
+                    </li>
+                    <li>
+                        <img src="static/images/IMG_1697_prodaja supstrata.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-3">
-            <i></i>
-        </a>
     </section>
 
-    <section class="green-line scroll-3">
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-3">
+        <i></i>
+    </a>
+
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-3" data-animation="on">
+
+    <section class="green-line">
         <h3>
-            savjetovanje o zaštiti bilja
+            savjetovanje
         </h3>
     </section>
 
@@ -223,10 +300,9 @@ $this->title = 'My Yii Application';
             <div class="col-12">
                 <div class="col-4 one-col-text has-button">
                     <article class="left">
-                        <h4 class="green">posjetite nas!</h4>
+                        <h4 class="green">HORTIKULTURA</h4>
                         <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh
+                            Naši hortikulturni stručnjaci savjetovati će Vas u Vašoj hobi proizvodnji i održavanju cvijeća i povrća.
                         </span>
                         <a class="btn classic" href="#">kontakt</a>
                     </article>
@@ -234,22 +310,24 @@ sed diam nonummy nibh
                 <div class="col-4 one-col-text">
                     <article class="middle">
                         <h4 class="green">
-                            <strong>zaštita bilja</strong>
+                            <strong>savjetovanje</strong>
                         </h4>
                         <span class="text">
-                            Jesenska proizvodnja ukrasnog bilja započinje početkom travnja i završava 1.studenog, na dan Svih Svetih.
+                            Imate li problem s kvalitetom tla i vode? <br>
+                            Suvremenim terenskim aparatima izmjerit ćemo pH, količinu hranjiva i soli Vaših uzoraka vode i tla.
                         </span>
+                        <a class="btn classic" href="mailto:info@pecina.hr">info@pecina.hr</a>
+
                     </article>
                 </div>
                 <div class="col-4 one-col-text has-button">
                     <article class="right">
                         <h4 class="green">
-                            kontaktirajte nas!
+                            ZAŠTITA BILJA
                         </h4>
                         <span class="text">
-                            i tako si osigurajte svoje omiljeno bilje!
+                             Naši stručnjaci zaštite bilja savjetovati će Vas o prevenciji bolesti i pronalasku učinkovitog sredstva liječenja i tretiranja<br> Vaših bolesnih biljaka.
                         </span>
-                        <a class="btn classic" href="mailto:info@pecina.hr">info@pecina.hr</a>
                     </article>
                 </div>
             </div>
@@ -257,22 +335,30 @@ sed diam nonummy nibh
     </section>
 
     <section class="slider-wrapper">
-        <div class="extra-slider no-slider">
+        <div class="extra-slider is-slider">
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-5.jpg" alt="" width="1366" height="600">
+                        <img src="static/images/IMG_3387_savjetovanje.JPG" alt="" width="1920" height="843">
+                    </li>
+                    <li>
+                        <img src="static/images/IMG_3390_savjetovanje.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-4">
-            <i></i>
-        </a>
     </section>
 
-    <section class="green-line scroll-4">
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-4">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-4" data-animation="on">
+
+    <section class="green-line">
         <h3>
             Uređenje vrtova
         </h3>
@@ -283,32 +369,31 @@ sed diam nonummy nibh
             <div class="col-12">
                 <div class="col-4 one-col-text has-button">
                     <article class="left">
-                        <h4 class="green">posjetite nas!</h4>
+                        <h4 class="green">zavirite</h4>
                         <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh
+                            u našu galeriju vrtova, <br> na koje smo vrlo ponosni
                         </span>
-                        <a class="btn classic" href="#">kontakt</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/galerija'); ?>">galerija</a>
                     </article>
                 </div>
                 <div class="col-4 one-col-text">
                     <article class="middle">
                         <h4 class="green">
-                            <strong>uređenje okućnica
+                            <strong>Uređenje vrtova
                             </strong>
                         </h4>
                         <span class="text">
-                            je jako bitno jer...
+                            Svaku vanjsku i unutarnju lokaciju pretvaramo u ozelenjeni raj!
                         </span>
                     </article>
                 </div>
                 <div class="col-4 one-col-text has-button">
                     <article class="right">
                         <h4 class="green">
-                            kontaktirajte nas!
+                            Javite se
                         </h4>
                         <span class="text">
-                            i tako si osigurajte svoje omiljeno bilje!
+                            i mi ćemo se potruditi <br> oko Vašeg vrta,<br> kao da je naš
                         </span>
                         <a class="btn classic" href="mailto:info@pecina.hr">info@pecina.hr</a>
                     </article>
@@ -322,15 +407,23 @@ sed diam nonummy nibh
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-6.jpg" alt="" width="1366" height="600">
+                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16 15.10.17.jpg" alt="" width="1920" height="843">
+                    </li>
+                    <li>
+                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16 15.10.08.jpg" alt="" width="1920" height="843">
+                    </li>
+                    <li>
+                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16 15.10.14.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-5">
-            <i></i>
-        </a>
     </section>
 
-</main>
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-5">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
+
+<!--END MAIN-->

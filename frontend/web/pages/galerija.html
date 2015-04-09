@@ -37,6 +37,35 @@
 
 <body>
 
+<div id="cd-nav" class="cd-nav">
+    <div class="cd-navigation-wrapper">
+        <div class="cd-half-block">
+            <h2>Izbornik</h2>
+            <nav>
+                <ul class="cd-primary-nav">
+                    <li><a href="index.html" class="selected">Naslovna</a></li>
+                    <li><a href="djelatnosti.html" class="">Djelatnosti</a></li>
+                    <li><a href="proizvodi.html" class="">Proizvodi</a></li>
+                    <li><a href="onama.html" class="">O nama</a></li>
+                    <li><a href="galerija.html" class="">Galerija</a></li>
+                    <li><a href="#" class="">Kontakt</a></li>
+                    <!-- list items here -->
+                </ul>
+            </nav>
+        </div><!-- .cd-half-block -->
+
+    </div> <!-- .cd-navigation-wrapper -->
+</div> <!-- .cd-nav -->
+
+<a href="#cd-nav" class="cd-nav-trigger">Menu
+    <span class="cd-nav-icon"></span>
+
+    <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+        <circle fill="transparent" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+    </svg>
+</a>
+
+<!--START NAV-->
 <nav class="main-nav">
 
     <div class="container-24">
@@ -60,7 +89,9 @@
         </div>
     </div>
 </nav>
+<!--END NAV-->
 
+<!--START HEADER-->
 <header class="work-header">
 
     <div class="header-bg home"></div>
@@ -129,8 +160,10 @@
     </a>
 
 </header>
+<!--END HEADER-->
 
-<main id="main-content" class="scroll-1">
+<!--START SECTION-->
+<section data-section class="section scroll-1" data-animation="on">
 
     <section class="green-line">
         <h3>
@@ -150,7 +183,14 @@
                             <figure>
                         <span class="itemblock-header-grid two">
                             <span class="i-block">
-                                <img src="static/ui/galerija-1.jpg" alt="Image"/>
+                                <a href="static/ui/img-1.jpg" data-lightbox="gallery-1">
+                                    <img src="static/ui/galerija-1.jpg" alt="Image"/>
+                                </a>
+                                <span class="gallery-list">
+                                    <a href="static/ui/img-2.jpg" data-lightbox="gallery-1"></a>
+                                    <a href="static/ui/img-3.jpg" data-lightbox="gallery-1"></a>
+                                    <a href="static/ui/img-4.jpg" data-lightbox="gallery-1"></a>
+                                </span>
                                 <span class="desc">
                                     <h4>Uređenje vrtova</h4>
                                     <span class="text">
@@ -195,9 +235,14 @@
 
     </section>
 
-</main>
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-5">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
 
-<footer class="footer scroll-5">
+<!--START FOOTER-->
+<footer data-section class="footer scroll-5" data-animation="on">
     <section class="green-line">
         <h3>
             Kontakt
@@ -272,14 +317,14 @@
             <div class="col-12">
                 &copy; 2015. Pecina d.o.o. All rights reserved.
 
-                <a class="arrow-up" href="#" data-scroll-to="on" data-scroll-to-target="#main-content">
+                <a class="arrow-up" href="#" data-scroll-to="on" data-scroll-to-target="body">
                     <i></i>
                 </a>
             </div>
         </div>
     </section>
 </footer>
-
+<!--END FOOTER-->
 
 <!--LOCAL ONLY-->
 <script type='text/javascript' id="__bs_script__">//<![CDATA[

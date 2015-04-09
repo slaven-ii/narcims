@@ -24,9 +24,11 @@ module.exports = function(grunt) {
                     'modernizr/modernizr.js': 'modernizr/modernizr.js',
                     'jquery/jquery.min.js': 'jquery/dist/jquery.min.js',
                     'gsap/TweenMax.js': 'gsap/src/uncompressed/TweenMax.js',
+                    'gsap/TimelineMax.js': 'gsap/src/uncompressed/TimelineMax.js',
                     'gsap/Draggable.js': 'gsap/src/uncompressed/utils/Draggable.js',
                     'jquery-waypoints/lib/jquery.waypoints.js': 'jquery-waypoints/lib/jquery.waypoints.js',
-                    'slideout/dist/slideout.js': 'slideout/dist/slideout.js'
+                    'slideout/dist/slideout.js': 'slideout/dist/slideout.js',
+                    'lightbox2/js/lightbox.js': 'lightbox2/js/lightbox.js'
                 }
             }
         },
@@ -91,9 +93,11 @@ module.exports = function(grunt) {
             js_frontend: {
                 src: [
                     './static/js/vendor/gsap/TweenMax.js',
+                    './static/js/vendor/gsap/TimelineMax.js',
                     './static/js/vendor/gsap/Draggable.js',
                     './static/js/vendor/jquery-waypoints/lib/jquery.waypoints.js',
                     './static/js/vendor/slideout/dist/slideout.js',
+                    './static/js/vendor/lightbox2/js/lightbox.js',
                     './static/js/plugins.js',
                     './static/js/utils.js',
                 ],

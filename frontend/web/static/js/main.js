@@ -42,14 +42,11 @@ $.fn.clickOff = function(callback, selfDestroy) {
                 self.treeAnimation();
             }
 
-            /*Resonsive nav*/
-            /*var slideout = new Slideout({
-                'panel': document.getElementById('panel'),
-                'menu': document.getElementById('menu'),
-                'padding': 256,
-                'tolerance': 70
-            });*/
+            main.sectionAnim();
+            main.responsiveMenu();
+        },
 
+        responsiveMenu: function () {
 
             var isLateralNavAnimating = false;
 
@@ -67,70 +64,119 @@ $.fn.clickOff = function(callback, selfDestroy) {
                     });
                 }
             });
-
-            /*document.querySelector('.js-slideout-toggle').addEventListener('click', function(eve) {
-                eve.preventDefault();
-                if($(this).attr('data-status') == 'off') {
-                    slideout.open();
-                    $(this).attr('data-status', 'on');
-                } else {
-                    slideout.close();
-                    $(this).attr('data-status', 'off');
-                }
-            });
-
-            document.querySelector('#panel').addEventListener('click', function(eve) {
-                eve.preventDefault();
-                if (eve.target.nodeName != 'BUTTON' && $('.js-slideout-toggle').attr('data-status') == 'on') {
-                    slideout.close();
-                    $('.js-slideout-toggle').attr('data-status', 'off');
-                }
-            });
-
-            document.querySelector('.menu').addEventListener('click', function(eve) {
-                eve.preventDefault();
-                if (eve.target.nodeName === 'A') { slideout.close(); }
-            });*/
-
-            // Inline SVG
-            //new Vivus('tree-svg', {type: 'delayed', duration: 200}, myCallback);
-            /*new Vivus('tree-svg', {
-                type: 'delayed',
-                duration: 200,
-                animTimingFunction: Vivus.EASE
-            }, myCallback);
-
-            function myCallback () {
-
-            }*/
         },
+
+        sectionAnim: function () {
+
+            //section
+            $('[data-animation="on"]').each(function() {
+
+                /*START PROCESS WRAPPER*/
+                var scrollMagicController = new ScrollMagic();
+                // Animation will be ignored and replaced by scene value in this example
+                var timeline = new TimelineMax();
+                var colText = $(this).find('.three-col-text');
+
+                var animation = 'Power3.easeInOut';
+
+
+                var tweenL = TweenMax.staggerFromTo(colText.find('article.left'), 0.65,
+                    { scale: 1, opacity: 0},
+                    { opacity: 1, delay: 0.4, ease:animation  }
+
+                );
+                var tweenM = TweenMax.staggerFromTo(colText.find('article.middle'), 0.65,
+                    { scale: 1, opacity: 0},
+                    { opacity: 1, delay: 0.2, ease:animation }
+
+                );
+                var tweenR = TweenMax.staggerFromTo(colText.find('article.right'), 0.65,
+                    { scale: 1, opacity: 0},
+                    { opacity: 1, delay: 0.4, ease:animation  }
+
+                );
+
+                timeline.add([ tweenL, tweenM, tweenR ]);
+                // Create the Scene and trigger when visible
+                var scene = new ScrollScene({
+                    triggerElement: $(this),
+                    triggerHook: 'onEnter',
+                    offset: 200 /* How many pixels to scroll / animate */
+                })
+                    .setTween(timeline)
+                    .addTo(scrollMagicController);
+
+            });
+
+            //section
+            $('.tree-boxes').find('.box').each(function() {
+
+                /*START PROCESS WRAPPER*/
+                var scrollMagicController = new ScrollMagic();
+                // Animation will be ignored and replaced by scene value in this example
+                var timeline = new TimelineMax();
+                var colText = $(this);
+
+                var tween = TweenMax.staggerFromTo(colText, 0.4,
+                    { scale: 1, opacity: 0, y: '50px'},
+                    { opacity: 1, y: '0px', delay: 0.6 },
+                    0.3
+                );
+
+                timeline.add([ tween]);
+                // Create the Scene and trigger when visible
+                var scene = new ScrollScene({
+                    triggerElement: $(this),
+                    triggerHook: 'onEnter',
+                    offset: 100 /* How many pixels to scroll / animate */
+                })
+                    .setTween(timeline)
+                    .addTo(scrollMagicController);
+
+            });
+
+        },
+
         stickyNav: function() {
 
             $('.home-header, .work-header').waypoint(function(direction) {
 
                 if (direction === 'down') {
-                    $('.main-nav').addClass('upper');
+                    TweenMax.to($('.main-nav').find('.menu'), 0.4, { padding: '0px 0px', onComplete: function () {
+                        if($('.subnav').length > 0) {
+                            TweenMax.to($('.subnav'), 0.6, { top: '100%' });
+                        }
+                    }});
 
                 } else if (direction === 'up') {
-                    $('.main-nav').removeClass('upper');
+                    TweenMax.to($('.main-nav').find('.menu'), 0.4, { padding: '10px 0px', onComplete: function () {
+                        if($('.subnav').length > 0) {
+                            TweenMax.to($('.subnav'), 0.6, { top: '-300%' });
+                        }
+                    }});
                 }
 
             }, {
                 offset: -100
             });
 
-            $('#main-content').waypoint(function(direction) {
+            /*$('.scroll-1').waypoint(function(direction) {
 
                 if (direction === 'down') {
                     $('.main-nav').addClass('fixed');
+                    TweenMax.to($('.main-nav'), 0.3, { top: '0px', onComplete: function () {
+                        $('.main-nav').addClass('fixed');
+                    }});
 
                 } else if (direction === 'up') {
-                    $('.main-nav').removeClass('fixed');
+                    TweenMax.to($('.main-nav'), 0.3, { top: '-80px', onComplete: function () {
+                        $('.main-nav').removeClass('fixed');
+                    }});
                 }
 
             }, {
-                offset: 0
-            });
+                offset: 45
+            });*/
 
         },
 
@@ -164,27 +210,25 @@ $.fn.clickOff = function(callback, selfDestroy) {
 
             $(".extra-slider.no-slider").extraSlider({
                 'type': 'fade',
-                'speed' : 0.7,
                 'paginate': false,
                 'navigate': false
             });
 
             $(".extra-slider.is-slider").extraSlider({
-                'auto': 5,
+                'auto': 3,
+                //'draggable': true,
                 'type': 'fade',
-                'speed' : 2,
                 //'keyboard': true,
                 'paginate': false,
-                'navigate': false,
-                'onInit': moveLoader,
+                'navigate': false
+                //'onInit': moveLoader,
                 //'onPause': movePause,
                 //'onResume': moveResume,
-                'onMoveStart': moveLoader
+                //'onMoveStart': moveLoader
             });
 
             function moveLoader(currentItem, total, slider) {
-                console.log("custom animation");
-                autoTween = TweenMax.fromTo(slider.find('.loader'), 5, {width: 0}, {width: "100%"});
+                //autoTween = TweenMax.fromTo(slider.find('.loader'), 5, {width: 0}, {width: "100%"});
             }
             function movePause(currentItem, total, slider) {
                 autoTween.pause();
@@ -213,8 +257,6 @@ $.fn.clickOff = function(callback, selfDestroy) {
                 });
 
                 $el.find('article').css('height', elementHeight);
-                //console.log(elementHeight);
-                //console.log(elementIndex);
             });
 
 
@@ -240,13 +282,24 @@ $.fn.clickOff = function(callback, selfDestroy) {
         },
 
         scrollToPlugin: function() {
-            var animation = 'Power2.easeOut';
+            var offset;
+
+            if(comFunct.isDesktop() && Modernizr.mq('only screen and (min-width: 1025px)')) {
+                offset = 45;
+                if($('.subnav').length > 0 ) {
+                    offset = 146;
+                }
+            } else {
+                offset: 54;
+            }
+
+            var animation = 'Power2.easeInOut';
             //activate scroll to
             $(document).on('click', '[data-scroll-to="on"]', function(e){
                 e.preventDefault();
                 console.log('da');
                 var scroolToAnchor = $(this).data('scroll-to-target');
-                TweenMax.to($('html, body'), 0.4, { scrollTop: $(scroolToAnchor).offset().top, ease: animation});
+                TweenMax.to($('html, body'), 0.4, { scrollTop: $(scroolToAnchor).offset().top - offset, ease: animation});
             });
         },
 
@@ -412,9 +465,9 @@ $.fn.clickOff = function(callback, selfDestroy) {
                 setTimeout(self.drop,1000);
             }
             image = new google.maps.MarkerImage($('#'+this.mapContainerId).attr('data-img'),
-                new google.maps.Size(36, 46),
+                new google.maps.Size(114, 76),
                 new google.maps.Point(0, 0),
-                new google.maps.Point(18, 23));
+                new google.maps.Point(57, 66));
         },
         initialize: function ()
         {
@@ -460,7 +513,7 @@ $.fn.clickOff = function(callback, selfDestroy) {
                 position: _latLng,
                 map: map,
                 draggable: false,
-                //icon: image,
+                icon: image,
                 animation: google.maps.Animation.DROP,
                 title: 'Click to zoom'
             });
@@ -476,6 +529,7 @@ $.fn.clickOff = function(callback, selfDestroy) {
         if($('.tree').length > 0 && comFunct.isDesktop() && Modernizr.mq('only screen and (min-width: 1025px)')) {
             main.treeAnimation();
         }
+
         main.highestEl();
 
     });
@@ -645,7 +699,9 @@ var pathObj = {
         ],
         "dimensions": {
             "width": 838,
-            "height": 2311
+            "height": 2311,
+            'strokeColor':'#000000',
+            responsive: true
         }
     }
 };

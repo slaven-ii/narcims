@@ -1,10 +1,6 @@
 <?php
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
-use frontend\widgets\Alert;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -48,11 +44,13 @@ AppAsset::register($this);
 
     <?php $this->head() ?>
 </head>
-<body id="topme">
+<body>
     <?php $this->beginBody() ?>
 
     <?= $content ?>
-    <footer class="footer scroll-4">
+
+    <!--START FOOTER-->
+    <footer class="footer scroll-4" data-animation="on">
         <section class="green-line">
             <h3>
                 Kontakt
@@ -79,9 +77,9 @@ AppAsset::register($this);
                             </h4>
                         <span class="text">
                             +395 1 3842 892 <br/>
-                            <span class="green">Jaroslav Pecina</span> <br/>
+                            <span class="green">Jaroslav Pecina, dipl.ing.agr. –  hortikultura</span> <br/>
                             +385 98 450 666 <br/>
-                            <span class="green">Jan Pecina</span> <br/>
+                            <span class="green">Jan Pecina, mag.ing.agr. – zaštita bilja</span> <br/>
                             +385 98 1658 387 <br/>
                             <a href="mailto:info@pecina.hr">info@pecina.hr</a>
                         </span>
@@ -93,11 +91,11 @@ AppAsset::register($this);
                                 zašto baš mi?
                             </h4>
                         <span class="text">
-                            Zato jer Vrtlarija Pecina osim proizvodnje biljaka nudi i:
-                            povjerenje, supstrate, <br/>
-                            uređenje vrtova, praksu
+                            Zato jer Vrtlarija Pecina osim proizvodnje biljaka nudi i:<br/>
+                            <span class="green">supstrate, uređenje vrtova,
+                            povjerenje, kvalitetu, tradiciju</span>
                         </span>
-                            <a class="btn classic" href="#">djelatnosti</a>
+                            <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/djelatnosti'); ?>">djelatnosti</a>
                         </article>
                     </div>
                 </div>
@@ -114,9 +112,14 @@ AppAsset::register($this);
                             Franje Tuđmana 20, <br/>
                             Novaki <br/>
                             10431 Sv. Nedelja
+                            <br/>
+                            <span class="green">OIB:</span> 87526088885
+                            <br>
+                            <span class="green">IBAN:</span> HR4923600001101276572
                         </span>
+
                         </div>
-                        <div id="simple-map-canvas" rel="45.8041251|15.7977075"></div>
+                        <div id="simple-map-canvas" rel="45.8041251|15.7977075" data-img="static/ui/pecina_pin_google.png" ></div>
                     </div>
                 </div>
             </div>
@@ -127,22 +130,23 @@ AppAsset::register($this);
                 <div class="col-12">
                     &copy; 2015. Pecina d.o.o. All rights reserved.
 
-                    <a class="arrow-up" href="#" data-scroll-to="on" data-scroll-to-target="#topme">
+                    <a class="arrow-up" href="#" data-scroll-to="on" data-scroll-to-target="body">
                         <i></i>
                     </a>
                 </div>
             </div>
         </section>
     </footer>
+    <!--END FOOTER-->
 
     <!--SCRIPTS-->
-    <!-- <script src='static/js/vendor/jquery/jquery.min.js'></script> -->
+    <!--<script src='static/js/vendor/jquery/jquery.min.js'></script>-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <script src="//maps.googleapis.com/maps/api/js?&sensor=false"></script>
     <script src='static/js/frontend.min.js'></script>
-    <script src='static/js/main.js'></script>
 
+    <script src='static/js/main.js'></script>
     <?php $this->endBody() ?>
 </body>
 </html>

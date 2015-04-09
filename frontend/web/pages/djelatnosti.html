@@ -37,6 +37,35 @@
 
 <body>
 
+<div id="cd-nav" class="cd-nav">
+    <div class="cd-navigation-wrapper">
+        <div class="cd-half-block">
+            <h2>Izbornik</h2>
+            <nav>
+                <ul class="cd-primary-nav">
+                    <li><a href="index.html" class="selected">Naslovna</a></li>
+                    <li><a href="djelatnosti.html" class="">Djelatnosti</a></li>
+                    <li><a href="proizvodi.html" class="">Proizvodi</a></li>
+                    <li><a href="onama.html" class="">O nama</a></li>
+                    <li><a href="galerija.html" class="">Galerija</a></li>
+                    <li><a href="#" class="">Kontakt</a></li>
+                    <!-- list items here -->
+                </ul>
+            </nav>
+        </div><!-- .cd-half-block -->
+
+    </div> <!-- .cd-navigation-wrapper -->
+</div> <!-- .cd-nav -->
+
+<a href="#cd-nav" class="cd-nav-trigger">Menu
+    <span class="cd-nav-icon"></span>
+
+    <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+        <circle fill="transparent" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+    </svg>
+</a>
+
+<!--START NAV-->
 <nav class="main-nav">
 
     <div class="container-24">
@@ -51,7 +80,6 @@
                         <img width="114" height="28" src="static/ui/svg/logo.svg" alt=""/>
                     </a>
                 </li>
-                <!--<li><a class="active" href="webshop.html">Web shop</a></li>-->
                 <li><a class="" href="onama.html">O nama</a></li>
                 <li><a class="" href="galerija.html">Galerija</a></li>
                 <li><a class="" href="#" data-scroll-to="on" data-scroll-to-target=".footer">Kontakt</a></li>
@@ -59,8 +87,57 @@
 
         </div>
     </div>
-</nav>
 
+    <div class="subnav">
+        <div class="container-12">
+            <div class="col-12">
+                <div class="col-3">
+                    <article>
+                        <a href="" class="gridblock two" data-scroll-to="on" data-scroll-to-target=".scroll-1">
+                            <figure>
+                                <img src="static/ui/djelatnosti-1.jpg" alt="Image"/>
+                            </figure>
+                            <h4>Proizvodnja ukrasnog bilja</h4>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article>
+                        <a href="" class="gridblock two" data-scroll-to="on" data-scroll-to-target=".scroll-2">
+                            <figure>
+                                <img src="static/ui/djelatnosti-2.jpg" alt="Image"/>
+                            </figure>
+                            <h4>Prodaja supstrata</h4>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article>
+                        <a href="" class="gridblock two" data-scroll-to="on" data-scroll-to-target=".scroll-3">
+                            <figure>
+                                <img src="static/ui/djelatnosti-3.jpg" alt="Image"/>
+                            </figure>
+                            <h4>SAVJETOVANJE U ZAŠTITI BILJA</h4>
+                        </a>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article>
+                        <a href="" class="gridblock two" data-scroll-to="on" data-scroll-to-target=".scroll-4">
+                            <figure>
+                                <img src="static/ui/djelatnosti-4.jpg" alt="Image"/>
+                            </figure>
+                            <h4>Uređenje vrtova</h4>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--END NAV-->
+
+<!--START HEADER-->
 <header class="work-header">
 
     <div class="header-bg home"></div>
@@ -69,6 +146,7 @@
         <div class="inn">
             <div class="container-8">
                 <div class="col-8">
+                    <h1>Djelatnosti naslov</h1>
                     <figure>
                         <span class="itemblock-header-grid two">
                             <span class="i-block">
@@ -137,8 +215,12 @@
     </a>
 
 </header>
+<!--END HEADER-->
 
-<main id="main-content" class="scroll-1">
+<!--START MAIN-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-1" data-animation="on">
 
     <section class="green-line">
         <h3>
@@ -188,18 +270,24 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-3.jpg" alt="" width="1366" height="600">
+                        <img src="static/ui/img-3-1.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-2">
-            <i></i>
-        </a>
     </section>
 
-    <section class="green-line scroll-2">
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-2">
+        <i></i>
+    </a>
+
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-2" data-animation="on">
+
+    <section class="green-line">
         <h3>
             prodaja supstrata
         </h3>
@@ -248,18 +336,24 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-4.jpg" alt="" width="1366" height="600">
+                        <img src="static/ui/img-4-1.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-3">
-            <i></i>
-        </a>
     </section>
 
-    <section class="green-line scroll-3">
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-3">
+        <i></i>
+    </a>
+
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-3" data-animation="on">
+
+    <section class="green-line">
         <h3>
             savjetovanje o zaštiti bilja
         </h3>
@@ -308,18 +402,23 @@ sed diam nonummy nibh
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-5.jpg" alt="" width="1366" height="600">
+                        <img src="static/ui/img-5-1.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-4">
-            <i></i>
-        </a>
     </section>
 
-    <section class="green-line scroll-4">
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-4">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-4" data-animation="on">
+
+    <section class="green-line">
         <h3>
             Uređenje vrtova
         </h3>
@@ -369,20 +468,23 @@ sed diam nonummy nibh
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-6.jpg" alt="" width="1366" height="600">
+                        <img src="static/ui/img-6-1.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-5">
-            <i></i>
-        </a>
     </section>
 
-</main>
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-5">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
 
-<footer class="footer scroll-5">
+<!--END MAIN-->
+
+<!--START FOOTER-->
+<footer class="footer scroll-5" data-animation="on">
     <section class="green-line">
         <h3>
             Kontakt
@@ -457,14 +559,14 @@ sed diam nonummy nibh
             <div class="col-12">
                 &copy; 2015. Pecina d.o.o. All rights reserved.
 
-                <a class="arrow-up" href="#" data-scroll-to="on" data-scroll-to-target="#main-content">
+                <a class="arrow-up" href="#" data-scroll-to="on" data-scroll-to-target="body">
                     <i></i>
                 </a>
             </div>
         </div>
     </section>
 </footer>
-
+<!--END FOOTER-->
 
 <!--LOCAL ONLY-->
 <script type='text/javascript' id="__bs_script__">//<![CDATA[

@@ -7,20 +7,38 @@
  */
 
 /* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+$this->title = 'Pecina | Galerija';
+
+function get_files($path){
+    $pathFr = Yii::getAlias('@frontend');
+    $pathFull = $pathFr . "/web/static/images/gallery/".$path;
+    $files = scandir($pathFull);
+    $paths = array();
+    foreach ($files as $key => $file) {
+        if($file == '.' || $file == '..' ){
+            unset($files[$key]);
+        }else{
+            $paths[] = "/static/images/gallery/" . $path . "/". $file;
+        }
+    }
+
+    return $paths;
+}
+
 ?>
+
+<?php echo $this->render('_navigation_mobile');?>
+
+
+<!--START NAV-->
 <nav class="main-nav">
 
-    <div class="container-24">
-        <div class="col-24">
+    <?php echo $this->render('_navigation');?>
 
-            <?php echo $this->render('_navigation'); ?>
-
-
-        </div>
-    </div>
 </nav>
+<!--END NAV-->
 
+<!--START HEADER-->
 <header class="work-header">
 
     <div class="header-bg home"></div>
@@ -32,40 +50,84 @@ $this->title = 'My Yii Application';
                     <figure>
                         <span class="itemblock-header-grid two">
                             <span class="i-block">
+                                <?php $image = get_files('proljece'); ?>
+                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-1">
+                                    <img src="static/ui/galerija-1.jpg" alt="Image"/>
+                                </a>
+                                <span class="gallery-list">
+                                    <?php
+                                    unset($image[0]);
+                                    foreach($image as $img) { ?>
+                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-1"></a>
+                                    <?php } ?>
+
+                                </span>
                                 <span class="desc">
                                     <h4>Proljeće</h4>
                                     <span class="text">
                                         Zavirite u našu galeriju proljetnog cvijeća <br/>  ...
                                     </span>
                                 </span>
-                                <img src="static/ui/galerija-1.jpg" alt="Image"/>
                             </span>
                             <span class="i-block">
+                                <?php $image = get_files('jesen'); ?>
+                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-2">
+                                    <img src="static/ui/galerija-2.jpg" alt="Image"/>
+                                </a>
+                                <span class="gallery-list">
+                                    <?php
+                                    unset($image[0]);
+                                    foreach($image as $img) { ?>
+                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-2"></a>
+                                    <?php } ?>
+
+                                </span>
                                 <span class="desc">
                                     <h4>Jesen</h4>
                                     <span class="text">
                                         Zavirite u našu galeriju jesenskog cvijeća <br/>  ...
                                     </span>
                                 </span>
-                                <img src="static/ui/galerija-2.jpg" alt="Image"/>
                             </span>
                             <span class="i-block">
+                                <?php $image = get_files('supstrati'); ?>
+                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-3">
+                                    <img src="static/ui/galerija-3.jpg" alt="Image"/>
+                                </a>
+                                <span class="gallery-list">
+                                    <?php
+                                    unset($image[0]);
+                                    foreach($image as $img) { ?>
+                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-3"></a>
+                                    <?php } ?>
+
+                                </span>
                                 <span class="desc">
                                     <h4>Supstrati</h4>
                                     <span class="text">
                                         Zavirite u našu galeriju supstrata <br/>  ...
                                     </span>
                                 </span>
-                                <img src="static/ui/galerija-3.jpg" alt="Image"/>
                             </span>
                             <span class="i-block">
+                                <?php $image = get_files('proizvodnja'); ?>
+                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-4">
+                                    <img src="static/ui/galerija-4.jpg" alt="Image"/>
+                                </a>
+                                <span class="gallery-list">
+                                    <?php
+                                    unset($image[0]);
+                                    foreach($image as $img) { ?>
+                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-4"></a>
+                                    <?php } ?>
+
+                                </span>
                                 <span class="desc">
                                     <h4>Proizvodnja</h4>
                                     <span class="text">
                                         Zavirite u našu galeriju proizvodnje cvijeća <br/>  ...
                                     </span>
                                 </span>
-                                <img src="static/ui/galerija-4.jpg" alt="Image"/>
                             </span>
                         </span>
                     </figure>
@@ -89,8 +151,10 @@ $this->title = 'My Yii Application';
     </a>
 
 </header>
+<!--END HEADER-->
 
-<main id="main-content" class="scroll-1">
+<!--START SECTION-->
+<section data-section class="section scroll-1" data-animation="on">
 
     <section class="green-line">
         <h3>
@@ -110,7 +174,18 @@ $this->title = 'My Yii Application';
                             <figure>
                         <span class="itemblock-header-grid two">
                             <span class="i-block">
-                                <img src="static/ui/galerija-1.jpg" alt="Image"/>
+                                <?php $image = get_files('uredjenje_vrtova'); ?>
+                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-4">
+                                    <img src="static/ui/galerije-5.jpg" alt="Image"/>
+                                </a>
+                                <span class="gallery-list">
+                                    <?php
+                                    unset($image[0]);
+                                    foreach($image as $img) { ?>
+                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-4"></a>
+                                    <?php } ?>
+
+                                </span>
                                 <span class="desc">
                                     <h4>Uređenje vrtova</h4>
                                     <span class="text">
@@ -119,7 +194,18 @@ $this->title = 'My Yii Application';
                                 </span>
                             </span>
                             <span class="i-block">
-                                <img src="static/ui/galerija-2.jpg" alt="Image"/>
+                                <?php $image = get_files('vrtlarija'); ?>
+                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-4">
+                                    <img src="static/ui/galerija-6.jpg" alt="Image"/>
+                                </a>
+                                <span class="gallery-list">
+                                    <?php
+                                    unset($image[0]);
+                                    foreach($image as $img) { ?>
+                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-4"></a>
+                                    <?php } ?>
+
+                                </span>
                                 <span class="desc">
                                     <h4>Vrtlarija</h4>
                                     <span class="text">
@@ -127,24 +213,7 @@ $this->title = 'My Yii Application';
                                     </span>
                                 </span>
                             </span>
-                            <span class="i-block">
-                                <img src="static/ui/galerija-3.jpg" alt="Image"/>
-                                <span class="desc">
-                                    <h4>Galerija</h4>
-                                    <span class="text">
 
-                                    </span>
-                                </span>
-                            </span>
-                            <span class="i-block">
-                                <img src="static/ui/galerija-4.jpg" alt="Image"/>
-                                <span class="desc">
-                                    <h4>Galerija</h4>
-                                    <span class="text">
-
-                                    </span>
-                                </span>
-                            </span>
                         </span>
                             </figure>
                         </div>
@@ -155,4 +224,8 @@ $this->title = 'My Yii Application';
 
     </section>
 
-</main>
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-5">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->

@@ -85,7 +85,7 @@ class SiteController extends Controller
         return $this->render('onama');
     }
 
-    public function actionProizvodi()
+    public function actionAkcije()
     {
         return $this->render('proizvodi');
     }

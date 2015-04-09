@@ -37,18 +37,35 @@
 
 <body>
 
-<svg style="display:none;">
-    <!-- icons here -->
+<div id="cd-nav" class="cd-nav">
+    <div class="cd-navigation-wrapper">
+        <div class="cd-half-block">
+            <h2>Izbornik</h2>
+            <nav>
+                <ul class="cd-primary-nav">
+                    <li><a href="index.html" class="selected">Naslovna</a></li>
+                    <li><a href="djelatnosti.html" class="">Djelatnosti</a></li>
+                    <li><a href="proizvodi.html" class="">Proizvodi</a></li>
+                    <li><a href="onama.html" class="">O nama</a></li>
+                    <li><a href="galerija.html" class="">Galerija</a></li>
+                    <li><a href="#" class="">Kontakt</a></li>
+                    <!-- list items here -->
+                </ul>
+            </nav>
+        </div><!-- .cd-half-block -->
 
-    <symbol id="twitter-icon" viewBox="0 0 32 32">
-        <path d="M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z" fill="#000000"></path>
-    </symbol>
-</svg>
+    </div> <!-- .cd-navigation-wrapper -->
+</div> <!-- .cd-nav -->
 
-<!--<svg class="twitter-icon">
-    <use xlink:href="#twitter-icon"></use>
-<svg>-->
+<a href="#cd-nav" class="cd-nav-trigger">Menu
+    <span class="cd-nav-icon"></span>
 
+    <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+        <circle fill="transparent" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+    </svg>
+</a>
+
+<!--START NAV-->
 <nav class="main-nav">
 
     <div class="container-24">
@@ -63,7 +80,6 @@
                         <img width="114" height="28" src="static/ui/svg/logo.svg" alt=""/>
                     </a>
                 </li>
-                <!--<li><a class="active" href="webshop.html">Web shop</a></li>-->
                 <li><a class="" href="onama.html">O nama</a></li>
                 <li><a class="" href="galerija.html">Galerija</a></li>
                 <li><a class="" href="#" data-scroll-to="on" data-scroll-to-target=".footer">Kontakt</a></li>
@@ -72,7 +88,9 @@
         </div>
     </div>
 </nav>
+<!--END NAV-->
 
+<!--START HEADER-->
 <header class="home-header">
 
     <div class="header-bg home"></div>
@@ -91,18 +109,18 @@
                         oazu <br/>
                         cvijeća.
                     </span>
+
+                    <div class="header-box">
+                        <span>Radno vrijeme:</span>
+                        <div class="home-box-inner">
+                            <span class="label">pon-pet:</span>
+                            <span class="val">8h - 18h</span>
+                            <span class="label">sub:</span>
+                            <span class="val">8h - 15h</span>
+                        </div>
+                    </div>
                 </figcaption>
             </figure>
-        </div>
-    </div>
-
-    <div class="header-box">
-        <span>Radno vrijeme:</span>
-        <div class="home-box-inner">
-            <span class="label">pon-pet:</span>
-            <span class="val">8h - 18h</span>
-            <span class="label">sub:</span>
-            <span class="val">8h - 15h</span>
         </div>
     </div>
 
@@ -111,9 +129,12 @@
     </a>
 
 </header>
+<!--END HEADER-->
 
-<main id="main-content" class="scroll-1">
+<!--START MAIN-->
 
+<!--START SECTION-->
+<section data-section class="section scroll-1" data-animation="on">
     <section class="green-line">
         <h3>
             Najava
@@ -163,35 +184,12 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-1.jpg" alt="" width="1366" height="600">
+                        <img src="static/ui/img-1-1.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
-                        <img src="static/ui/img-2.jpg" alt="" width="1366" height="600">
+                        <img src="static/ui/img-2-1.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
-            </div>
-
-            <div class="fb-box">
-
-                <span class="icons-wrapper">
-                    <span class="fb-icon">
-                        <img src="static/ui/svg/fb-icon.svg" alt="Facebook"/>
-                    </span>
-                    <span class="like-icon">
-                        <img src="static/ui/svg/like-icon.svg" alt="Facebook"/>
-                    </span>
-                </span>
-
-                <span class="box-title">
-                    Lajkajte nas <br/>
-                    i pratite naše <br/>
-                    objave na <br/>
-                    Facebooku
-                </span>
-
-                <span class="text">
-                    .. jer možda baš vi dobijete poklon - besplatnu trajnicu po izboru!
-                </span>
             </div>
 
             <!--<div class="navigation">
@@ -200,13 +198,39 @@
             </div>
             <div class="pagination"></div>-->
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-2">
-            <i></i>
-        </a>
     </section>
 
-    <section class="green-line scroll-2">
+    <div class="fb-box">
+        <span class="icons-wrapper">
+            <span class="fb-icon">
+                <img src="static/ui/svg/fb-icon.svg" alt="Facebook"/>
+            </span>
+            <span class="like-icon">
+                <img src="static/ui/svg/like-icon.svg" alt="Facebook"/>
+            </span>
+        </span>
+
+        <span class="box-title">
+            Lajkajte nas <br/>
+            i pratite naše <br/>
+            objave na <br/>
+            Facebooku
+        </span>
+
+        <span class="text">
+            .. jer možda baš vi dobijete poklon - besplatnu trajnicu po izboru!
+        </span>
+    </div>
+
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-2">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-2" data-animation="on">
+    <section class="green-line">
         <h3>
             Proljetna proizvodnja
         </h3>
@@ -255,18 +279,22 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-2.jpg" alt="" width="1366" height="600">
+                        <img src="static/ui/img-2-1.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-3">
-            <i></i>
-        </a>
     </section>
 
-    <section class="green-line scroll-3">
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-3">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-3" data-animation="on">
+    <section class="green-line">
         <h3>
             Jesenska proizvodnja
         </h3>
@@ -315,20 +343,23 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-1.jpg" alt="" width="1366" height="600">
+                        <img src="static/ui/img-1-1.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-4">
-            <i></i>
-        </a>
     </section>
 
-</main>
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-4">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
 
-<footer class="footer scroll-4">
+<!--END MAIN-->
+
+<!--START FOOTER-->
+<footer class="footer scroll-4" data-animation="on">
     <section class="green-line">
         <h3>
             Kontakt
@@ -392,7 +423,7 @@
                             10431 Sv. Nedelja
                         </span>
                     </div>
-                    <div id="simple-map-canvas" rel="45.8041251|15.7977075"></div>
+                    <div id="simple-map-canvas" rel="45.8041251|15.7977075" data-img="static/ui/pecina_pin_google.png"></div>
                 </div>
             </div>
         </div>
@@ -403,14 +434,14 @@
             <div class="col-12">
                 &copy; 2015. Pecina d.o.o. All rights reserved.
 
-                <a class="arrow-up" href="#" data-scroll-to="on" data-scroll-to-target="#main-content">
+                <a class="arrow-up" href="#" data-scroll-to="on" data-scroll-to-target="body">
                     <i></i>
                 </a>
             </div>
         </div>
     </section>
 </footer>
-
+<!--END FOOTER-->
 
 <!--LOCAL ONLY-->
 <script type='text/javascript' id="__bs_script__">//<![CDATA[
@@ -423,6 +454,7 @@ document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.
 
 <script src="//maps.googleapis.com/maps/api/js?&sensor=false"></script>
 <script src='static/js/frontend.min.js'></script>
+
 <script src='static/js/main.js'></script>
 
 </body>

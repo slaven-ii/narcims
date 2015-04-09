@@ -7,21 +7,20 @@
  */
 
 /* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+$this->title = 'Pecina | Akcije';
 ?>
 
+<?php echo $this->render('_navigation_mobile');?>
+
+<!--START NAV-->
 <nav class="main-nav">
 
-    <div class="container-24">
-        <div class="col-24">
+    <?php echo $this->render('_navigation');?>
 
-            <?php echo $this->render('_navigation'); ?>
-
-
-        </div>
-    </div>
 </nav>
+<!--END NAV-->
 
+<!--START HEADER-->
 <header class="work-header">
 
     <div class="header-bg home"></div>
@@ -30,25 +29,19 @@ $this->title = 'My Yii Application';
         <div class="inn">
             <div class="container-8">
                 <div class="col-8">
+                    <h1>Akcije</h1>
                     <figure>
                         <span class="itemblock-header-grid two">
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>Ukrasno bilje</h4>
+                                    <h4>Katalog</h4>
                                     <span class="text">
-                                        Proučite naš asortiman i lakše donesite odluku o kupnji <br/>  ...
+                                        (Uskoro) prolistajte i budite u toku sa akcijskim cijenama <br/> ...
                                     </span>
                                 </span>
-                                <img src="static/ui/proizvodi-1.jpg" alt="Image"/>
-                            </span>
-                            <span class="i-block">
-                                <span class="desc">
-                                    <h4>Supstrati</h4>
-                                    <span class="text">
-                                        Proučite koja vrsta supstrataje savršena za vašu biljku <br/>  ...
-                                    </span>
-                                </span>
-                                <img src="static/ui/proizvodi-2.jpg" alt="Image"/>
+                                <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-1">
+                                    <img src="static/ui/akcije-1.jpg" alt="Image"/>
+                                </a>
                             </span>
                             <span class="i-block">
                                 <span class="desc">
@@ -57,16 +50,31 @@ $this->title = 'My Yii Application';
                                         za odabir, kupovinu i održavanje cvijeća <br/>  ...
                                     </span>
                                 </span>
-                                <img src="static/ui/proizvodi-3.jpg" alt="Image"/>
+                                <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-2">
+                                    <img src="static/ui/akcije-2.jpg" alt="Image"/>
+                                </a>
                             </span>
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>Katalog</h4>
+                                    <h4>Letak proljeće</h4>
                                     <span class="text">
-                                        Prolistajte i budite u toku sa akcijskim cijenama <br/>  ...
+                                        Propustili ste naš proljetni letak? Pogledajte ga ovdje <br/>  ...
                                     </span>
                                 </span>
-                                <img src="static/ui/proizvodi-4.jpg" alt="Image"/>
+                                <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-3">
+                                    <img src="static/ui/akcije-3.jpg" alt="Image"/>
+                                </a>
+                            </span>
+                            <span class="i-block">
+                                <span class="desc">
+                                    <h4>Letak jesen</h4>
+                                    <span class="text">
+                                        Propustili ste naš jesenski akcijski letak? Pogledajte ga ovdje <br/>  ...
+                                    </span>
+                                </span>
+                                <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-4">
+                                    <img src="static/ui/akcije-4.jpg" alt="Image"/>
+                                </a>
                             </span>
                         </span>
                     </figure>
@@ -90,192 +98,12 @@ $this->title = 'My Yii Application';
     </a>
 
 </header>
+<!--END HEADER-->
 
-<main id="main-content" class="scroll-1">
+<!--START SECTION-->
+<section data-section class="section scroll-1" data-animation="on">
 
     <section class="green-line">
-        <h3>
-            Ukrasno bilje
-        </h3>
-    </section>
-
-    <section class="three-col-text">
-        <div class="container-12">
-            <div class="col-12">
-                <div class="col-4 one-col-text has-button">
-                    <article class="left">
-                        <h4 class="green">Proljeće</h4>
-                        <span class="text">
-                            pogledajte naš asortiman ...
-                        </span>
-                        <a class="btn classic" href="#">galerija</a>
-                    </article>
-                </div>
-                <div class="col-4 one-col-text">
-                    <article class="middle">
-                        <h4 class="green">
-                            <strong>Ukrasno</strong> cvijeće
-                        </h4>
-                        <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
-                        </span>
-                    </article>
-                </div>
-                <div class="col-4 one-col-text">
-                    <article class="right">
-                        <h4 class="green">
-                            Jesen
-                        </h4>
-                        <span class="text">
-                            Provjerite naš jesenski asortimanu vemenskom razdoblju od ...
-                        </span>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="slider-wrapper">
-        <div class="extra-slider no-slider">
-            <div class="wrapper">
-                <ul>
-                    <li>
-                        <img src="static/ui/img-7.jpg" alt="" width="1366" height="600">
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-2">
-            <i></i>
-        </a>
-    </section>
-
-    <section class="green-line scroll-2">
-        <h3>
-            Supstrati
-        </h3>
-    </section>
-
-    <section class="three-col-text">
-        <div class="container-12">
-            <div class="col-12">
-                <div class="col-4 one-col-text has-button">
-                    <article class="left">
-                        <h4 class="green">Provjerena kvaliteta</h4>
-                        <span class="text">
-                            Garantiramo Vam kvalitetne supstrate, koje i sami koristimo u vlastitoj proizdvodnji
-                        </span>
-                        </span>
-                        <a class="btn classic" href="#">galerija</a>
-                    </article>
-                </div>
-                <div class="col-4 one-col-text">
-                    <article class="middle">
-                        <h4 class="green">
-                            <strong>Vrste supstrata</strong>
-                        </h4>
-                        <span class="text">
-                            dijelimo, ovisno potrebama klijenata, na: <br/>
-                            STENDER PRO <br/>
-                            STENDER HOBBY
-                        </span>
-                    </article>
-                </div>
-                <div class="col-4 one-col-text has-button">
-                    <article class="right">
-                        <h4 class="green">
-                            Lorem
-                        </h4>
-                        <span class="text">
-                            ispum
-                        </span>
-                        <a class="btn classic" href="#">webshop</a>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="slider-wrapper">
-        <div class="extra-slider no-slider">
-            <div class="wrapper">
-                <ul>
-                    <li>
-                        <img src="static/ui/img-8.jpg" alt="" width="1366" height="600">
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-3">
-            <i></i>
-        </a>
-    </section>
-
-    <section class="green-line scroll-3">
-        <h3>
-            Priručnik
-        </h3>
-    </section>
-
-    <section class="three-col-text">
-        <div class="container-12">
-            <div class="col-12">
-                <div class="col-4 one-col-text has-button">
-                    <article class="left">
-                        <h4 class="green">Korisno</h4>
-                        <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh
-                        </span>
-                        <a class="btn classic" href="#">kontakt</a>
-                    </article>
-                </div>
-                <div class="col-4 one-col-text">
-                    <article class="middle">
-                        <h4 class="green">
-                            <strong>Priručnik</strong>
-                        </h4>
-                        <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh
-                        </span>
-                    </article>
-                </div>
-                <div class="col-4 one-col-text has-button">
-                    <article class="right">
-                        <h4 class="green">
-                            Pitanja?
-                        </h4>
-                        <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh
-                        </span>
-                        <a class="btn classic" href="#">info@pecina.hr</a>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="slider-wrapper">
-        <div class="extra-slider no-slider">
-            <div class="wrapper">
-                <ul>
-                    <li>
-                        <img src="static/ui/img-9.jpg" alt="" width="1366" height="600">
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-4">
-            <i></i>
-        </a>
-    </section>
-
-    <section class="green-line scroll-4">
         <h3>
             Katalog
         </h3>
@@ -286,12 +114,10 @@ sed diam nonummy nibh
             <div class="col-12">
                 <div class="col-4 one-col-text has-button">
                     <article class="left">
-                        <h4 class="green">Pogledajte</h4>
+                        <h4 class="green">Proljeće</h4>
                         <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh
+                            pogledajte naš asortiman <br> i što Vam novo donosimo <br>...
                         </span>
-                        <a class="btn classic" href="#">kontakt</a>
                     </article>
                 </div>
                 <div class="col-4 one-col-text">
@@ -300,20 +126,87 @@ sed diam nonummy nibh
                             <strong>Katalog</strong>
                         </h4>
                         <span class="text">
-                            u izradi
+                            USKORO <br> prolistajte i budite u toku <br> s akcijskim cijenama
+                        </span>
+                    </article>
+                </div>
+                <div class="col-4 one-col-text">
+                    <article class="right">
+                        <h4 class="green">
+                            Jesen
+                        </h4>
+                        <span class="text">
+                            pogledajte naš asortiman <br> i što Vam novo donosimo <br>...
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-wrapper">
+        <div class="extra-slider no-slider">
+            <div class="wrapper">
+                <ul>
+
+                        <li>
+                            <a href="">
+                                <img src="static/ui/img-12-1.jpg" alt="" width="1920" height="843">
+                            </a>
+                        </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-2">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-2" data-animation="on">
+    <section class="green-line">
+        <h3>
+            Priručnik
+        </h3>
+    </section>
+
+    <section class="three-col-text">
+        <div class="container-12">
+            <div class="col-12">
+                <div class="col-4 one-col-text has-button">
+                    <article class="left">
+                        <h4 class="green">KORISNO</h4>
+                        <span class="text">
+                            Priručnik možete uzeti kod nas, <br>prilikom kupnje ili preuzeti <br>ovdje - potpuno besplatno!
+                        </span>
+                        </span>
+                        <a class="btn classic" href="/static/download/Prirucnik.pdf">Preuzmi <img style="width: 20px; top: 5px; position: relative;" src="static/ui/pecina_download_icon_2.png"></a>
+                    </article>
+                </div>
+                <div class="col-4 one-col-text">
+                    <article class="middle">
+                        <h4 class="green">
+                            <strong>priručnik</strong>
+                        </h4>
+                        <span class="text">
+                            Prolistajte i educirajte se <br> te tako pravilno brinite o <br>svojoj biljci...
                         </span>
                     </article>
                 </div>
                 <div class="col-4 one-col-text has-button">
                     <article class="right">
                         <h4 class="green">
-                            Lorem ipsum
+                            Pitanja?
                         </h4>
                         <span class="text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh
+                            Za sva dodatna pitanja <br>i nejasnoće, obratite nam se <br>putem e-maila.
                         </span>
-                        <a class="btn classic" href="mailto:info@pecina.hr">info@pecina.hr</a>
+                        <a class="btn classic" data-scroll-to="on" data-scroll-to-target=".footer" href="#">upit</a>
                     </article>
                 </div>
             </div>
@@ -325,15 +218,141 @@ sed diam nonummy nibh
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/ui/img-10.jpg" alt="" width="1366" height="600">
+                        <img src="static/ui/img-13-1.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
         </div>
-
-        <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-5">
-            <i></i>
-        </a>
     </section>
 
-</main>
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-3">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-3" data-animation="on">
+    <section class="green-line scroll-3">
+        <h3>
+            LETAK PROLJEĆE
+        </h3>
+    </section>
+
+    <section class="three-col-text">
+        <div class="container-12">
+            <div class="col-12">
+                <div class="col-4 one-col-text has-button">
+                    <article class="left">
+                        <h4 class="green">Korisno</h4>
+                        <span class="text">
+                            Priručnik možete uzeti kod nas, <br>prilikom kupnje ili preuzeti <br>ovdje - potpuno besplatno!
+                        </span>
+                        <a class="btn classic" href="/static/download/Letak_proljece.pdf">Preuzmi <img style="width: 20px; top: 5px; position: relative;" src="static/ui/pecina_download_icon_2.png"></a>
+                    </article>
+                </div>
+                <div class="col-4 one-col-text">
+                    <article class="middle">
+                        <h4 class="green">
+                            <strong>LETAK PROLJEĆE</strong>
+                        </h4>
+                        <span class="text">
+                            Propustili ste naš <br>proljetni akcijski letak? <br>Pogledajte ga ovdje ...
+                        </span>
+                    </article>
+                </div>
+                <div class="col-4 one-col-text has-button">
+                    <article class="right">
+                        <h4 class="green">
+                            Pitanja?
+                        </h4>
+                        <span class="text">
+                                Za sva dodatna pitanja <br>i nejasnoće, obratite nam se <br>putem e-maila.
+                        </span>
+                        <a class="btn classic" data-scroll-to="on" data-scroll-to-target=".footer" href="#">upit</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-wrapper">
+        <div class="extra-slider no-slider">
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <img src="static/ui/img-14-1.jpg" alt="" width="1920" height="843">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".scroll-4">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
+
+<!--START SECTION-->
+<section data-section class="section scroll-4" data-animation="on">
+    <section class="green-line">
+        <h3>
+            LETAK JESEN
+        </h3>
+    </section>
+
+    <section class="three-col-text">
+        <div class="container-12">
+            <div class="col-12">
+                <div class="col-4 one-col-text has-button">
+                    <article class="left">
+                        <h4 class="green">Korisno</h4>
+                        <span class="text">
+                            Priručnik možete uzeti kod nas, <br>prilikom kupnje ili preuzeti <br>ovdje - potpuno besplatno!
+                        </span>
+                        <a class="btn classic" href="/static/download/LETAK_jesen.pdf">Preuzmi <img style="width: 20px; top: 5px; position: relative;" src="static/ui/pecina_download_icon_2.png"></a>
+                    </article>
+                </div>
+                <div class="col-4 one-col-text">
+                    <article class="middle">
+                        <h4 class="green">
+                            <strong>LETAK JESEN</strong>
+                        </h4>
+                        <span class="text">
+                            Propustili ste naš <br>jesenski akcijski letak?<br> Pogledajte ga ovdje …
+                        </span>
+                    </article>
+                </div>
+                <div class="col-4 one-col-text has-button">
+                    <article class="right">
+                        <h4 class="green">
+                            Pitanja?
+                        </h4>
+                        <span class="text">
+                                Za sva dodatna pitanja <br>i nejasnoće, obratite nam se <br>putem e-maila.
+                        </span>
+                        <a class="btn classic" data-scroll-to="on" data-scroll-to-target=".footer" href="#">upit</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-wrapper">
+        <div class="extra-slider no-slider">
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <img src="static/ui/img-15-1.jpg" alt="" width="1920" height="843">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <a class="arrow-down" href="#" data-scroll-to="on" data-scroll-to-target=".footer">
+        <i></i>
+    </a>
+</section>
+<!--END SECTION-->
