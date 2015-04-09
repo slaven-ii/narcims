@@ -199,7 +199,7 @@ $this->title = 'Pecina | Djelatnosti';
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/images/IMG_5308.JPG" alt="" width="1920" height="843">
+                        <img src="static/images/proizvodnja_1.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
                         <img src="static/images/proizvodnja_3.jpg" alt="" width="1920" height="843">
@@ -269,10 +269,10 @@ $this->title = 'Pecina | Djelatnosti';
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/images/IMG_1695_prodaja supstrata.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/IMG_1695_prodaja-supstrata.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
-                        <img src="static/images/IMG_1697_prodaja supstrata.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/IMG_1697_prodaja-supstrata.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
@@ -407,13 +407,13 @@ $this->title = 'Pecina | Djelatnosti';
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16 15.10.17.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16-15.10.17.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
-                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16 15.10.08.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16-15.10.08.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
-                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16 15.10.14.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16-15.10.14.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>
@@ -424,6 +424,8 @@ $this->title = 'Pecina | Djelatnosti';
         <i></i>
     </a>
 </section>
+
+
 <!--END SECTION-->
 
 <!--END MAIN-->

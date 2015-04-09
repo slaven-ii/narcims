@@ -270,13 +270,13 @@ $this->title = 'Pecina | Početna';
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/images/IMG_3440 zima.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/IMG_3440-zima.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
-                        <img src="static/images/IMG_3441 zima.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/IMG_3441-zima.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
-                        <img src="static/images/IMG_3459 zima.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/IMG_3459-zima.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>

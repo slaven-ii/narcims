@@ -58,10 +58,6 @@ class SiteController extends Controller
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
         ];
     }
 
@@ -113,19 +109,21 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-    public function actionContact()
+    public function actionKontakt()
     {
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                return $this->render('kontakt-success', [
+                    'model' => $model,
+                ]);
             } else {
                 Yii::$app->session->setFlash('error', 'There was an error sending email.');
             }
 
             return $this->refresh();
         } else {
-            return $this->render('contact', [
+            return $this->render('kontakt', [
                 'model' => $model,
             ]);
         }

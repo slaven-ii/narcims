@@ -49,6 +49,7 @@ AppAsset::register($this);
 
     <?= $content ?>
 
+    <?php if(Yii::$app->controller->action->id != 'kontakt'){ ?>
     <!--START FOOTER-->
     <footer class="footer scroll-4" data-animation="on">
         <section class="green-line">
@@ -138,6 +139,7 @@ AppAsset::register($this);
         </section>
     </footer>
     <!--END FOOTER-->
+    <?php } ?>
 
     <!--SCRIPTS-->
     <!--<script src='static/js/vendor/jquery/jquery.min.js'></script>-->
@@ -147,6 +149,11 @@ AppAsset::register($this);
     <script src='static/js/frontend.min.js'></script>
 
     <script src='static/js/main.js'></script>
+    <script>
+        $("img").each(function(){
+            $(this).css("background-image", $(this).attr("src"));
+        });
+    </script>
     <?php $this->endBody() ?>
 </body>
 </html>

@@ -44,6 +44,17 @@ $.fn.clickOff = function(callback, selfDestroy) {
 
             main.sectionAnim();
             main.responsiveMenu();
+            main.equalize();
+        },
+
+        equalize: function () {
+
+            var a = $('.c-item').highestElement();
+
+            $('.contact-wrapper').find('.info').css('height', $('.contact-wrapper').find('#simple-map-canvas').height());
+
+            //$('.c-item').css('height', a.height());
+
         },
 
         responsiveMenu: function () {
