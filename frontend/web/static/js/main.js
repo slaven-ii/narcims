@@ -49,6 +49,8 @@ $.fn.clickOff = function(callback, selfDestroy) {
 
         equalize: function () {
 
+            //$('.extra-slider').find('img').vcenter();
+
             var a = $('.c-item').highestElement();
 
             $('.contact-wrapper').find('.info').css('height', $('.contact-wrapper').find('#simple-map-canvas').height());
@@ -219,13 +221,14 @@ $.fn.clickOff = function(callback, selfDestroy) {
         eSlider: function () {
             var autoTween;
 
-            $(".extra-slider.no-slider").extraSlider({
+            $(".extra-slider.is-slider").extraSlider({
+                'auto': 3,
                 'type': 'fade',
                 'paginate': false,
                 'navigate': false
             });
 
-            $(".extra-slider.is-slider").extraSlider({
+            /*$(".extra-slider.is-slider").extraSlider({
                 'auto': 3,
                 //'draggable': true,
                 'type': 'fade',
@@ -236,7 +239,7 @@ $.fn.clickOff = function(callback, selfDestroy) {
                 //'onPause': movePause,
                 //'onResume': moveResume,
                 //'onMoveStart': moveLoader
-            });
+            });*/
 
             function moveLoader(currentItem, total, slider) {
                 //autoTween = TweenMax.fromTo(slider.find('.loader'), 5, {width: 0}, {width: "100%"});
@@ -308,7 +311,6 @@ $.fn.clickOff = function(callback, selfDestroy) {
             //activate scroll to
             $(document).on('click', '[data-scroll-to="on"]', function(e){
                 e.preventDefault();
-                console.log('da');
                 var scroolToAnchor = $(this).data('scroll-to-target');
                 TweenMax.to($('html, body'), 0.4, { scrollTop: $(scroolToAnchor).offset().top - offset, ease: animation});
             });
@@ -542,6 +544,7 @@ $.fn.clickOff = function(callback, selfDestroy) {
         }
 
         main.highestEl();
+        main.equalize();
 
     });
 

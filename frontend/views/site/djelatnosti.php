@@ -339,7 +339,7 @@ $this->title = 'Pecina | Djelatnosti';
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/images/IMG_3387_savjetovanje.JPG" alt="" width="1920" height="843">
+                        <img src="static/images/IMG_3387_savjetovanje.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
                         <img src="static/images/IMG_3390_savjetovanje.jpg" alt="" width="1920" height="843">
@@ -403,17 +403,17 @@ $this->title = 'Pecina | Djelatnosti';
     </section>
 
     <section class="slider-wrapper">
-        <div class="extra-slider no-slider">
+        <div class="extra-slider is-slider">
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16-15.10.17.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/2015-01-16-15.10.17.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
-                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16-15.10.08.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/2015-01-16-15.10.08.jpg" alt="" width="1920" height="843">
                     </li>
                     <li>
-                        <img src="static/images/gallery/uredjenje_vrtova/2015-01-16-15.10.14.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/2015-01-16-15.10.14.jpg" alt="" width="1920" height="843">
                     </li>
                 </ul>
             </div>

@@ -3752,23 +3752,27 @@ h4 {
     .work-header .itemblock-header-grid .i-block, .gallery-list .itemblock-header-grid .i-block {
       margin-bottom: 2%;
       position: relative; }
-      .work-header .itemblock-header-grid .i-block:before, .gallery-list .itemblock-header-grid .i-block:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-in-out;
-        -khtml-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        content: ""; }
       .work-header .itemblock-header-grid .i-block a, .gallery-list .itemblock-header-grid .i-block a {
-        display: block; }
+        display: block;
+        position: relative; }
+      .work-header .itemblock-header-grid .i-block.preview a, .gallery-list .itemblock-header-grid .i-block.preview a {
+        display: block;
+        position: relative; }
+        .work-header .itemblock-header-grid .i-block.preview a:before, .gallery-list .itemblock-header-grid .i-block.preview a:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.8);
+          opacity: 0;
+          -webkit-transition: all 0.3s ease-in-out;
+          -khtml-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          content: ""; }
       .work-header .itemblock-header-grid .i-block .icon, .gallery-list .itemblock-header-grid .i-block .icon {
         width: auto;
         height: auto;
@@ -3834,9 +3838,9 @@ h4 {
       @media only screen and (min-width: 0) and (max-width: 600px) {
         .work-header .itemblock-header-grid .i-block:last-child, .gallery-list .itemblock-header-grid .i-block:last-child {
           margin-bottom: 0; } }
-      .work-header .itemblock-header-grid .i-block:hover:before, .gallery-list .itemblock-header-grid .i-block:hover:before {
+      .work-header .itemblock-header-grid .i-block:hover.preview a:before, .gallery-list .itemblock-header-grid .i-block:hover.preview a:before {
         opacity: 1; }
-      .work-header .itemblock-header-grid .i-block:hover .icon, .gallery-list .itemblock-header-grid .i-block:hover .icon {
+      .work-header .itemblock-header-grid .i-block:hover.preview .icon, .gallery-list .itemblock-header-grid .i-block:hover.preview .icon {
         -webkit-transform: translate(-50%, -50%);
         -khtml-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
@@ -4447,6 +4451,8 @@ main {
       height: auto; } }
 
 .green-line {
+  position: relative;
+  z-index: 1;
   display: block;
   background: #e1ebe0;
   padding: 15px; }
@@ -4499,6 +4505,7 @@ main {
 
 .three-col-text {
   position: relative;
+  z-index: 1;
   padding: 50px 0 35px;
   background: white; }
   @media only screen and (min-width: 0) and (max-width: 600px) {
@@ -4568,11 +4575,10 @@ main {
         margin-bottom: 35px; } }
 
 .slider-wrapper {
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
 
 .extra-slider ul li img, .extra-slider-auto ul li img {
-  vertical-align: top;
+  position: relative;
   width: 100%;
   height: auto; }
 
@@ -4963,6 +4969,22 @@ main {
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px; }
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
+    .contact-wrapper .c-item {
+      width: 50%;
+      padding-bottom: 40px; }
+      .contact-wrapper .c-item:last-child {
+        width: 100%; } }
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    .contact-wrapper .c-item {
+      width: 50%;
+      padding-bottom: 40px; }
+      .contact-wrapper .c-item:last-child {
+        width: 100%; } }
+  @media only screen and (min-width: 0) and (max-width: 600px) {
+    .contact-wrapper .c-item {
+      width: 100%;
+      padding-bottom: 40px; } }
   .contact-wrapper .info {
     font-family: 'proxima_nova_regular';
     font-size: 14px;
@@ -4971,6 +4993,9 @@ main {
     padding-right: 25px;
     padding-bottom: 31px;
     position: relative; }
+    @media only screen and (min-width: 0) and (max-width: 600px) {
+      .contact-wrapper .info {
+        height: auto !important; } }
     .contact-wrapper .info .green {
       color: #46803c; }
     .contact-wrapper .info .social {
@@ -5000,8 +5025,20 @@ main {
     font-size: 24px;
     line-height: 1.2em;
     padding: 15px 0; }
+    @media only screen and (min-width: 0) and (max-width: 600px) {
+      .contact-wrapper .form-title {
+        text-align: left; } }
   .contact-wrapper form {
     padding-left: 25px; }
+    @media only screen and (min-width: 768px) and (max-width: 900px) {
+      .contact-wrapper form {
+        padding-left: 0px; } }
+    @media only screen and (min-width: 600px) and (max-width: 767px) {
+      .contact-wrapper form {
+        padding-left: 0px; } }
+    @media only screen and (min-width: 0) and (max-width: 600px) {
+      .contact-wrapper form {
+        padding-left: 0px; } }
     .contact-wrapper form fieldset {
       display: block;
       padding-bottom: 10px; }

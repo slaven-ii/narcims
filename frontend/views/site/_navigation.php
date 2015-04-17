@@ -48,7 +48,7 @@ function setActive($action){
             </li>
             <li><a class="<?php setActive('onama'); ?>" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/onama'); ?>">O nama</a></li>
             <li><a class="<?php setActive('galerija'); ?>" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/galerija'); ?>">Galerija</a></li>
-            <li><a class="<?php setActive('kontakt'); ?>" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" data-scroll-to="on" data-scroll-to-target=".footer">Kontakt</a></li>
+            <li><a class="<?php setActive('kontakt'); ?>" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" >Kontakt</a></li>
         </ul>
 
     </div>

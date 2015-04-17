@@ -74,7 +74,7 @@ AppAsset::register($this);
                     <div class="col-4 one-col-text">
                         <article class="middle">
                             <h4 class="green">
-                                <strong>kontak</strong>
+                                <strong>kontakt</strong>
                             </h4>
                         <span class="text">
                             +395 1 3842 892 <br/>
@@ -148,7 +148,7 @@ AppAsset::register($this);
     <script src="//maps.googleapis.com/maps/api/js?&sensor=false"></script>
     <script src='static/js/frontend.min.js'></script>
 
-    <script src='static/js/main.js'></script>
+    <script src='static/js/main.js?r=4'></script>
     <script>
         $("img").each(function(){
             $(this).css("background-image", $(this).attr("src"));

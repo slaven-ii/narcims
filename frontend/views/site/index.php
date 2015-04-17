@@ -95,7 +95,7 @@ $this->title = 'Pecina | Početna';
                         <span class="text">
                             i nabavite potrebnu opremu za <br>vašu vlastitu hobi proizvodnju cvijeća i povrća!
                         </span>
-                        <a class="btn classic" href="mailto:info@pecina.hr">info@pecina.hr</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>">upit</a>
                     </article>
                 </div>
             </div>
@@ -107,7 +107,7 @@ $this->title = 'Pecina | Početna';
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/images/gallery/proljece/F721-04.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/F721-04.jpg" alt="" width="1920" height="843">
                     </li>
 
                 </ul>

@@ -57,9 +57,9 @@ class ContactForm extends Model
             ->setFrom([$this->email => $this->name])
             ->setSubject('Novi upid od ' . $this->email)
             ->setTextBody(
-                $this->name . "<br><br>".
-                $this->email . "<br><br>".
-                $this->tel . "<br><br>".
+                $this->name . "\n".
+                $this->email . "\n".
+                $this->tel . "\n".
                 $this->body
             )
             ->send();

@@ -15,7 +15,7 @@ function get_files($path){
     $files = scandir($pathFull);
     $paths = array();
     foreach ($files as $key => $file) {
-        if($file == '.' || $file == '..' ){
+        if($file == '.' || $file == '..' || $file=='.DS_Store'){
             unset($files[$key]);
         }else{
             $paths[] = "/static/images/gallery/" . $path . "/". $file;
@@ -49,7 +49,7 @@ function get_files($path){
                 <div class="col-8">
                     <figure>
                         <span class="itemblock-header-grid two">
-                            <span class="i-block">
+                            <span class="i-block preview">
                                 <?php $image = get_files('proljece'); ?>
                                 <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-1">
                                     <img src="static/ui/galerija-1.jpg" alt="Image"/>
@@ -68,8 +68,10 @@ function get_files($path){
                                         Zavirite u našu galeriju proljetnog cvijeća <br/>  ...
                                     </span>
                                 </span>
+                                <img class="icon" src="static/ui/magnifier.png" alt="Image"/>
+
                             </span>
-                            <span class="i-block">
+                            <span class="i-block preview">
                                 <?php $image = get_files('jesen'); ?>
                                 <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-2">
                                     <img src="static/ui/galerija-2.jpg" alt="Image"/>
@@ -88,8 +90,10 @@ function get_files($path){
                                         Zavirite u našu galeriju jesenskog cvijeća <br/>  ...
                                     </span>
                                 </span>
+                                <img class="icon" src="static/ui/magnifier.png" alt="Image"/>
+
                             </span>
-                            <span class="i-block">
+                            <span class="i-block preview">
                                 <?php $image = get_files('supstrati'); ?>
                                 <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-3">
                                     <img src="static/ui/galerija-3.jpg" alt="Image"/>
@@ -108,8 +112,10 @@ function get_files($path){
                                         Zavirite u našu galeriju supstrata <br/>  ...
                                     </span>
                                 </span>
+                                <img class="icon" src="static/ui/magnifier.png" alt="Image"/>
+
                             </span>
-                            <span class="i-block">
+                            <span class="i-block preview">
                                 <?php $image = get_files('proizvodnja'); ?>
                                 <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-4">
                                     <img src="static/ui/galerija-4.jpg" alt="Image"/>
@@ -128,6 +134,8 @@ function get_files($path){
                                         Zavirite u našu galeriju proizvodnje cvijeća <br/>  ...
                                     </span>
                                 </span>
+                                <img class="icon" src="static/ui/magnifier.png" alt="Image"/>
+
                             </span>
                         </span>
                     </figure>
@@ -173,7 +181,7 @@ function get_files($path){
                         <div class="col-8">
                             <figure>
                         <span class="itemblock-header-grid two">
-                            <span class="i-block">
+                            <span class="i-block preview">
                                 <?php $image = get_files('uredjenje_vrtova'); ?>
                                 <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-4">
                                     <img src="static/ui/galerije-5.jpg" alt="Image"/>
@@ -192,8 +200,10 @@ function get_files($path){
                                         Zavirite u našu galerijuuređenja vrtova <br/>  ...
                                     </span>
                                 </span>
+                                <img class="icon" src="static/ui/magnifier.png" alt="Image"/>
+
                             </span>
-                            <span class="i-block">
+                            <span class="i-block preview">
                                 <?php $image = get_files('vrtlarija'); ?>
                                 <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-4">
                                     <img src="static/ui/galerija-6.jpg" alt="Image"/>
@@ -212,6 +222,8 @@ function get_files($path){
                                         Zavirite u našu galeriju staklenika moderne tehnologije <br/>  ...
                                     </span>
                                 </span>
+                                <img class="icon" src="static/ui/magnifier.png" alt="Image"/>
+
                             </span>
 
                         </span>
