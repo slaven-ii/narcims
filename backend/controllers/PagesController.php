@@ -97,6 +97,7 @@ class PagesController extends Controller
         $viewData = $this->renderPartial($path);
 
         $items = $this->getView()->getItems();
+        //var_dump($items); die();
 
         $model = new Page();
         $model->loadItems($items);

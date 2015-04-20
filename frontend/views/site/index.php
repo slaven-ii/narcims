@@ -83,7 +83,7 @@ $this->title = 'Pecina | Početna';
                             POČELO PROLJEĆE U VRTLARIJI PECINA
                         </h4>
                         <span class="text">
-                            Ponovno smo započeli, <br>našu 104. proljetnu proizvodnju <br>ukrasnog bilja!
+                            Otvorili smo vrata naše 104. <br> Proljetne prodaje ukrasnog bilja!
                         </span>
                     </article>
                 </div>
@@ -95,7 +95,7 @@ $this->title = 'Pecina | Početna';
                         <span class="text">
                             i nabavite potrebnu opremu za <br>vašu vlastitu hobi proizvodnju cvijeća i povrća!
                         </span>
-                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>">upit</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
                     </article>
                 </div>
             </div>

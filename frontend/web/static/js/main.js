@@ -250,6 +250,24 @@ $.fn.clickOff = function(callback, selfDestroy) {
             function moveResume(currentItem, total, slider) {
                 autoTween.resume();
             }
+
+            if(window.location.hash) {
+                var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+                var gallery = $('a[data-lightbox="' + hash + '"]:first');
+                console.log(hash);
+                console.log(gallery);
+
+                if(gallery.length > 0){
+                    setTimeout(function(){
+                        gallery.trigger('click');
+                        console.log("clicked");
+                    }, 350);
+
+                } else {
+                    // No hash found
+                }
+            }
+
         },
 
         highestEl: function () {
@@ -464,7 +482,7 @@ $.fn.clickOff = function(callback, selfDestroy) {
     mapCenter,
     image,
     self,
-    MY_MAPTYPE_ID = 'Pecina Jaroslav',
+    //MY_MAPTYPE_ID = 'Pecina Jaroslav',
     simplegmap = {
 
         minZoom : 1,
@@ -492,15 +510,16 @@ $.fn.clickOff = function(callback, selfDestroy) {
                 draggable: true,
                 center: new google.maps.LatLng(mapCenter[0], mapCenter[1]),
                 // disableDefaultUI: true,
+                /*
                 mapTypeControlOptions: {
                     mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
                 },
-                mapTypeIds: [google.maps.MapTypeId.ROADMAP,MY_MAPTYPE_ID]
+                mapTypeIds: [google.maps.MapTypeId.ROADMAP,MY_MAPTYPE_ID] */
             };
 
             map = new google.maps.Map(document.getElementById(this.mapContainerId), myOptions);
-            map.mapTypes.set(MY_MAPTYPE_ID, self.stylize());
-            map.setMapTypeId(MY_MAPTYPE_ID);
+            //map.mapTypes.set(MY_MAPTYPE_ID, self.stylize());
+            //map.setMapTypeId(MY_MAPTYPE_ID);
         },
         stylize: function()
         {
@@ -552,6 +571,7 @@ $.fn.clickOff = function(callback, selfDestroy) {
     simplegmap.init();
 
 }($));
+
 
 
 /*

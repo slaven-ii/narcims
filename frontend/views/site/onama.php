@@ -77,11 +77,15 @@ $this->title = 'Pecina | O nama';
             <div class="inn">
                 <div class="container-8">
                     <div class="col-8">
+                        <h1>O NAMA</h1>
+
                         <figure>
                         <span class="itemblock-header-grid two">
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>Misija i vizija</h4>
+                                    <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-1" style="width: 100%;">
+                                       <h4>Misija i vizija</h4>
+                                    </a>
                                     <span class="text">
                                         naši ciljevi i planovi za budućnost ...
                                     </span>
@@ -92,7 +96,9 @@ $this->title = 'Pecina | O nama';
                             </span>
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>Povijest</h4>
+                                    <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-2" style="width: 100%;">
+                                        <h4>Povijest</h4>
+                                    </a>
                                     <span class="text orange-dark">
                                         Vrtlarije Pecina <br>od 1911. do danas. <br>Stoljetna tradicija ...
                                     </span>
@@ -103,7 +109,9 @@ $this->title = 'Pecina | O nama';
                             </span>
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>Društvena odgovornost</h4>
+                                    <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-3" style="width: 100%;">
+                                        <h4>Društvena odgovornost</h4>
+                                    </a>
                                     <span class="text">
                                         donacije, briga za okoliš, nagrade i priznanja ...
                                     </span>
@@ -114,7 +122,9 @@ $this->title = 'Pecina | O nama';
                             </span>
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>Praksa</h4>
+                                    <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-4" style="width: 100%;">
+                                        <h4>Praksa</h4>
+                                    </a>
                                     <span class="text">
                                         nudimo mogućnost obavljanja prakse i edukacije
                                     </span>
@@ -176,7 +186,7 @@ $this->title = 'Pecina | O nama';
                         <span class="text">
                             naši ciljevi i planovi za budućnost
                         </span>
-                        <a class="btn classic" href="#">povijest</a>
+                        <a class="btn classic" href="" data-scroll-to="on" data-scroll-to-target=".scroll-2">povijest</a>
                     </article>
                 </div>
                 <div class="col-4 one-col-text">
@@ -250,7 +260,7 @@ $this->title = 'Pecina | O nama';
                         <span class="text orange-dark">
                             počela je naša prva proizvodnja cvijeća
                         </span>
-                        <a class="btn classic" href="#">webshop</a>
+                        <!-- <a class="btn classic" href="#">webshop</a> -->
                     </article>
                 </div>
             </div>

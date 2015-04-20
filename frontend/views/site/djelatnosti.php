@@ -69,12 +69,14 @@ $this->title = 'Pecina | Djelatnosti';
         <div class="inn">
             <div class="container-8">
                 <div class="col-8">
-                    <h1>Djelatnosti</h1>
+                    <h1>DJELATNOSTI</h1>
                     <figure>
                         <span class="itemblock-header-grid two">
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>Proizvodnja ukrasnog bilja</h4>
+                                    <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-1">
+                                        <h4>Proizvodnja ukrasnog bilja</h4>
+                                    </a>
                                     <span class="text">
                                         Proučite kako izgleda <br> rast biljke od ukorjenjavanja do prekrasnog ukrasnog bilja
                                     </span>
@@ -85,7 +87,9 @@ $this->title = 'Pecina | Djelatnosti';
                             </span>
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>Prodaja supstrata</h4>
+                                    <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-2">
+                                        <h4>Prodaja supstrata</h4>
+                                    </a>
                                     <span class="text">
                                         Kod nas možete kupiti raznovrsne supstrate, ovisno o Vašim potrebama
                                         <br/>
@@ -98,7 +102,9 @@ $this->title = 'Pecina | Djelatnosti';
                             </span>
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>SAVJETOVANJE</h4>
+                                    <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-3">
+                                        <h4>SAVJETOVANJE</h4>
+                                    </a>
                                     <span class="text">
                                         U zaštiti bilja ili hortikulturi
                                         <br/>
@@ -111,7 +117,9 @@ $this->title = 'Pecina | Djelatnosti';
                             </span>
                             <span class="i-block">
                                 <span class="desc">
-                                    <h4>Uređenje vrtova</h4>
+                                    <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-4">
+                                        <h4>Uređenje vrtova</h4>
+                                    </a>
                                     <span class="text">
                                         Svaku vanjsku i unutarnju lokaciju pretvaramo u ozelenjeni raj!
                                         <br/>
@@ -167,7 +175,7 @@ $this->title = 'Pecina | Djelatnosti';
                             proizvodnje podijeljena je u šest neovisnih  potpuno opremljenih automatiziranih odjeljaka.
                         </span>
                         </span>
-                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/galerija'); ?>">galerija</a>
+                        <a class="btn classic" style="width: inherit;" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/galerija'); ?>#gallery-4">Galerija Proizvodnja</a>
                     </article>
                 </div>
                 <div class="col-4 one-col-text">
@@ -304,7 +312,7 @@ $this->title = 'Pecina | Djelatnosti';
                         <span class="text">
                             Naši hortikulturni stručnjaci savjetovati će Vas u Vašoj hobi proizvodnji i održavanju cvijeća i povrća.
                         </span>
-                        <a class="btn classic" href="#">kontakt</a>
+                        <a class="btn classic" href="" data-scroll-to="on" data-scroll-to-target=".footer">kontakt</a>
                     </article>
                 </div>
                 <div class="col-4 one-col-text">
@@ -373,7 +381,7 @@ $this->title = 'Pecina | Djelatnosti';
                         <span class="text">
                             u našu galeriju vrtova, <br> na koje smo vrlo ponosni
                         </span>
-                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/galerija'); ?>">galerija</a>
+                        <a class="btn classic" style="width: inherit;" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/galerija'); ?>#gallery-5">Galerija Uređenje vrtova</a>
                     </article>
                 </div>
                 <div class="col-4 one-col-text">

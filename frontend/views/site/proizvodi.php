@@ -206,7 +206,7 @@ $this->title = 'Pecina | Akcije';
                         <span class="text">
                             Za sva dodatna pitanja <br>i nejasnoće, obratite nam se <br>putem e-maila.
                         </span>
-                        <a class="btn classic" data-scroll-to="on" data-scroll-to-target=".footer" href="#">upit</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
                     </article>
                 </div>
             </div>
@@ -269,7 +269,7 @@ $this->title = 'Pecina | Akcije';
                         <span class="text">
                                 Za sva dodatna pitanja <br>i nejasnoće, obratite nam se <br>putem e-maila.
                         </span>
-                        <a class="btn classic" data-scroll-to="on" data-scroll-to-target=".footer" href="#">upit</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
                     </article>
                 </div>
             </div>
@@ -332,7 +332,7 @@ $this->title = 'Pecina | Akcije';
                         <span class="text">
                                 Za sva dodatna pitanja <br>i nejasnoće, obratite nam se <br>putem e-maila.
                         </span>
-                        <a class="btn classic" data-scroll-to="on" data-scroll-to-target=".footer" href="#">upit</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
                     </article>
                 </div>
             </div>

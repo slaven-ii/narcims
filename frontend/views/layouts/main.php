@@ -77,36 +77,42 @@ AppAsset::register($this);
                                 <strong>kontakt</strong>
                             </h4>
                         <span class="text">
-                            +395 1 3842 892 <br/>
+                            +385 1 3842 892 <br/>
                             <span class="green">Jaroslav Pecina, dipl.ing.agr. –  hortikultura</span> <br/>
                             +385 98 450 666 <br/>
                             <span class="green">Jan Pecina, mag.ing.agr. – zaštita bilja</span> <br/>
                             +385 98 1658 387 <br/>
                             <a href="mailto:info@pecina.hr">info@pecina.hr</a>
                         </span>
+                            <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
                         </article>
                     </div>
                     <div class="col-4 one-col-text has-button">
                         <article class="right">
                             <h4 class="green">
-                                zašto baš mi?
+                                ADRESA
                             </h4>
                         <span class="text">
-                            Zato jer Vrtlarija Pecina osim proizvodnje biljaka nudi i:<br/>
-                            <span class="green">supstrate, uređenje vrtova,
-                            povjerenje, kvalitetu, tradiciju</span>
+                            Vrtarija Pecina<br/>
+                            Franje Tuđmana 20, Novaki <br>
+                            10431 Sveta Nedelja <br>
+                            <br>
+                            <span class="green">OIB:</span> 87526088885
+                            <br>
+                            <span class="green">IBAN:</span> HR4923600001101276572
                         </span>
-                            <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/djelatnosti'); ?>">djelatnosti</a>
                         </article>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <section class="map-wrapper">
             <div class="container-12">
                 <div class="col-12">
                     <div class="map-inner">
+                        <!--
                         <div class="address">
                             <h4>Adresa</h4>
                         <span class="text">
@@ -118,7 +124,7 @@ AppAsset::register($this);
                             <br>
                             <span class="green">IBAN:</span> HR4923600001101276572
                         </span>
-
+                        -->
                         </div>
                         <div id="simple-map-canvas" rel="45.8041251|15.7977075" data-img="static/ui/pecina_pin_google.png" ></div>
                     </div>

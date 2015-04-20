@@ -183,14 +183,14 @@ function get_files($path){
                         <span class="itemblock-header-grid two">
                             <span class="i-block preview">
                                 <?php $image = get_files('uredjenje_vrtova'); ?>
-                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-4">
+                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-5">
                                     <img src="static/ui/galerije-5.jpg" alt="Image"/>
                                 </a>
                                 <span class="gallery-list">
                                     <?php
                                     unset($image[0]);
                                     foreach($image as $img) { ?>
-                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-4"></a>
+                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-5"></a>
                                     <?php } ?>
 
                                 </span>
@@ -205,14 +205,14 @@ function get_files($path){
                             </span>
                             <span class="i-block preview">
                                 <?php $image = get_files('vrtlarija'); ?>
-                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-4">
+                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-6">
                                     <img src="static/ui/galerija-6.jpg" alt="Image"/>
                                 </a>
                                 <span class="gallery-list">
                                     <?php
                                     unset($image[0]);
                                     foreach($image as $img) { ?>
-                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-4"></a>
+                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-6"></a>
                                     <?php } ?>
 
                                 </span>

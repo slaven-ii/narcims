@@ -10,15 +10,14 @@ use yii\helpers\Html;
 ?>
 
 <?php $form = ActiveForm::begin(['id' => 'my-form']); ?>
-<?= $form->field($model, 'slug') ?>
-<?= $form->field($model, 'type') ?>
+
 
 <?php
 
 //var_dump($model->rules());
 foreach ($model->getDataAtributes() as $data) {
-    //var_dump($data);
-    echo $form->field($model, $data);
+    var_dump($data);
+    echo $form->field($model, $data)->textarea();
 }
 
 ?>
