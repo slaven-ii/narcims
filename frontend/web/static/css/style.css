@@ -4560,21 +4560,21 @@ main {
     .three-col-text article.left {
       text-align: left; }
       .three-col-text article.left .text {
-        padding-right: 30%; }
+        padding-right: 20%; }
       .three-col-text article.left .btn {
         left: 0; }
     .three-col-text article.middle {
       text-align: center; }
       .three-col-text article.middle .text {
-        padding-left: 15%;
-        padding-right: 15%; }
+        padding-left: 5%;
+        padding-right: 5%; }
       .three-col-text article.middle .btn {
         left: 50%;
         margin-left: -80px; }
     .three-col-text article.right {
       text-align: right; }
       .three-col-text article.right .text {
-        padding-left: 30%; }
+        padding-left: 20%; }
       .three-col-text article.right .btn {
         right: 0; }
   .three-col-text .one-col-text.has-button article {
