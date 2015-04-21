@@ -126,3 +126,5 @@ protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
 themes/classic/views/
+
+frontend/web/node_modules/*
