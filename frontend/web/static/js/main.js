@@ -322,7 +322,7 @@ $.fn.clickOff = function(callback, selfDestroy) {
                     offset = 146;
                 }
             } else {
-                offset: 54;
+                offset = 54;
             }
 
             var animation = 'Power2.easeInOut';
@@ -330,6 +330,8 @@ $.fn.clickOff = function(callback, selfDestroy) {
             $(document).on('click', '[data-scroll-to="on"]', function(e){
                 e.preventDefault();
                 var scroolToAnchor = $(this).data('scroll-to-target');
+                console.log($(scroolToAnchor).offset().top);
+
                 TweenMax.to($('html, body'), 0.4, { scrollTop: $(scroolToAnchor).offset().top - offset, ease: animation});
             });
         },
@@ -505,7 +507,7 @@ $.fn.clickOff = function(callback, selfDestroy) {
             mapCenter = $('#'+simplegmap.mapContainerId).attr('rel').split('|');
 
             var myOptions = {
-                zoom: 15,
+                zoom: 14,
                 scrollwheel: false,
                 draggable: true,
                 center: new google.maps.LatLng(mapCenter[0], mapCenter[1]),
@@ -564,6 +566,7 @@ $.fn.clickOff = function(callback, selfDestroy) {
 
         main.highestEl();
         main.equalize();
+        main.scrollToPlugin();
 
     });
 

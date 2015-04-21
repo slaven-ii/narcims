@@ -83,14 +83,14 @@ $this->title = 'Pecina | O nama';
                         <span class="itemblock-header-grid two">
                             <span class="i-block">
                                 <span class="desc">
-                                    <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-1" style="width: 100%;">
+                                    <a href="#" data-scroll-to="on" data-scroll-to-target=".scroll-1" style="width: 100%;">
                                        <h4>Misija i vizija</h4>
                                     </a>
                                     <span class="text">
                                         naši ciljevi i planovi za budućnost ...
                                     </span>
                                 </span>
-                                <a href="" data-scroll-to="on" data-scroll-to-target=".scroll-1" style="width: 100%;">
+                                <a href="#" data-scroll-to="on" data-scroll-to-target=".scroll-1" style="width: 100%;">
                                     <img src="static/ui/about-1.jpg" alt="Image">
                                 </a>
                             </span>

@@ -3442,6 +3442,7 @@ body, html {
   font-family: 'proxima_nova_regular'; }
   @media only screen and (min-width: 600px) and (max-width: 1024px) {
     body, html {
+      height: auto;
       overflow-x: hidden; } }
   @media only screen and (min-width: 0) and (max-width: 600px) {
     body, html {
@@ -3494,7 +3495,7 @@ a {
 p, .text {
   font-size: 14px;
   line-height: 1.28em;
-  color: #a6a7aa; }
+  color: #8e8e8e; }
   p .green, .text .green {
     color: #46803c; }
 
@@ -3551,7 +3552,7 @@ h4 {
     display: inline-block;
     background: white;
     padding: 10px 0; }
-    @media only screen and (min-width: 0) and (max-width: 600px) {
+    @media only screen and (min-width: 0) and (max-width: 1024px) {
       .main-nav .menu {
         padding: 0 0; } }
     .main-nav .menu li {
@@ -3559,11 +3560,11 @@ h4 {
       vertical-align: top; }
       .main-nav .menu li a, .main-nav .menu li .empty {
         display: block;
-        font-size: 12px;
+        font-size: 15px;
         line-height: 39px;
         text-transform: uppercase;
         padding: 5px 15px 5px;
-        color: #a6a7aa;
+        color: #8e8e8e;
         text-decoration: none;
         min-width: 110px;
         -webkit-transition: all 0.3s ease-in-out;
@@ -3645,7 +3646,25 @@ h4 {
     left: -5%;
     top: 25%;
     color: #46803c;
-    font-size: 19px; }
+    font-size: 19px;
+    /*&.mobile-show {
+            display: none;
+        }
+
+        &.mobile-hide {
+            display: block;
+        }
+
+        @include MQ(mobile) {
+
+            &.mobile-show {
+                display: block;
+            }
+
+            &.mobile-hide {
+                display: none;
+            }
+        }*/ }
   .home-header .home-right-text {
     position: absolute;
     right: 5%;
@@ -3673,14 +3692,14 @@ h4 {
     font-family: 'proxima_nova_light';
     color: #46803c;
     padding: 40px 20px; }
-  @media only screen and (min-width: 0) and (max-width: 600px) {
+  @media only screen and (min-width: 0) and (max-width: 1024px) {
     .work-header, .gallery-list {
       height: auto;
       min-height: 1px;
       padding: 54px 0; }
       .work-header .container-8, .gallery-list .container-8 {
         padding: 0 20px; } }
-  @media only screen and (min-width: 0) and (max-width: 600px) {
+  @media only screen and (min-width: 0) and (max-width: 1024px) {
     .work-header .out-w, .gallery-list .out-w {
       position: relative; }
     .work-header .out, .gallery-list .out {
@@ -4443,7 +4462,8 @@ main {
     height: auto; }
   @media only screen and (min-width: 600px) and (max-width: 1024px) {
     .section {
-      height: auto; } }
+      height: auto;
+      min-height: 1px; } }
   @media only screen and (min-width: 0) and (max-width: 600px) {
     .section {
       padding-bottom: 40px;
@@ -4527,7 +4547,7 @@ main {
     .three-col-text article .text {
       display: block;
       padding-bottom: 10px;
-      color: #a6a7aa; }
+      color: #8e8e8e; }
       .three-col-text article .text.orange-dark {
         color: #8d4923; }
       .three-col-text article .text .green {
@@ -4688,7 +4708,7 @@ main {
 
 #simple-map-canvas {
   width: 100%;
-  height: 220px; }
+  height: 320px; }
 
 .copy {
   position: relative;
@@ -4989,7 +5009,7 @@ main {
     font-family: 'proxima_nova_regular';
     font-size: 14px;
     line-height: 1.4em;
-    color: #a6a7aa;
+    color: #8e8e8e;
     padding-right: 25px;
     padding-bottom: 31px;
     position: relative; }
@@ -5022,7 +5042,7 @@ main {
     color: #46803c;
     text-align: right;
     font-family: 'proxima_nova_bold';
-    font-size: 24px;
+    font-size: 15px;
     line-height: 1.2em;
     padding: 15px 0; }
     @media only screen and (min-width: 0) and (max-width: 600px) {
@@ -5183,7 +5203,7 @@ main {
       font-family: 'proxima_nova_regular';
       font-size: 14px;
       line-height: 1.4em;
-      color: #a6a7aa;
+      color: #8e8e8e;
       padding-right: 25px;
       padding-bottom: 31px;
       position: relative; }

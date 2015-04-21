@@ -51,7 +51,7 @@
         background: $white-100;
         padding: 10px 0;
 
-        @include MQ(mobile) {
+        @include MQ(desktop-) {
             padding: 0 0;
         }
 
@@ -61,7 +61,7 @@
 
             a, .empty {
                 display: block;
-                font-size: 12px;
+                font-size: 15px;
                 line-height: 39px;
                 text-transform: uppercase;
                 padding: 5px 15px 5px;
@@ -185,6 +185,25 @@
         top: 25%;
         color: $green;
         font-size: 19px;
+
+        /*&.mobile-show {
+            display: none;
+        }
+
+        &.mobile-hide {
+            display: block;
+        }
+
+        @include MQ(mobile) {
+
+            &.mobile-show {
+                display: block;
+            }
+
+            &.mobile-hide {
+                display: none;
+            }
+        }*/
     }
     .home-right-text {
         position: absolute;
@@ -222,7 +241,7 @@
         padding: 40px 20px;
     }
 
-    @include MQ(mobile) {
+    @include MQ(desktop-) {
         height: auto;
         min-height: 1px;
         padding: 54px 0;
@@ -243,7 +262,7 @@
         }
     }
 
-    @include MQ(mobile) {
+    @include MQ(desktop-) {
 
         .out-w {
             position: relative;

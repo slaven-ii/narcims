@@ -22,17 +22,16 @@ $this->title = 'Pecina | Početna';
         <div class="inn">
             <h1>Proizvodnja i prodaja cvijeća</h1>
             <figure>
+                <span class="home-left-text mobile-show">
+                    Zavirite u <br/>
+                    našu stoljetnu ...
+                </span>
                 <img src="static/ui/home-header-image.png" alt=""/>
+                <span class="home-right-text">
+                    oazu <br/>
+                    cvijeća.
+                </span>
                 <figcaption>
-                    <span class="home-left-text">
-                        Zavirite u <br/>
-                        našu stoljetnu ...
-                    </span>
-                    <span class="home-right-text">
-                        oazu <br/>
-                        cvijeća.
-                    </span>
-
                     <div class="header-box">
                         <span>Radno vrijeme:</span>
                         <div class="home-box-inner">
