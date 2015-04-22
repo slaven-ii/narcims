@@ -14,7 +14,7 @@ $this->title = 'Pecina | Početna';
 <!--END NAV-->
 
 <style>
-    .home-box-inner{
+    .hand-written{
         font-family: 'architects_daughterregular';
     }
 </style>
@@ -38,12 +38,12 @@ $this->title = 'Pecina | Početna';
                 </span>
                 <figcaption>
                     <div class="header-box">
-                        <span>Radno vrijeme:</span>
+                        <span class="hand-written" style="margin-left: -20px;">Radno vrijeme:</span>
                         <div class="home-box-inner">
                             <span class="label">pon-pet:</span>
-                            <span class="val" style="font-size: 20px;">8h - 18h</span>
+                            <span class="val" >8h - 18h</span>
                             <span class="label">sub:</span>
-                            <span class="val" style="font-size: 20px;">8h - 15h</span>
+                            <span class="val">8h - 15h</span>
                         </div>
                     </div>
                 </figcaption>
@@ -87,7 +87,7 @@ $this->title = 'Pecina | Početna';
                             POČELO PROLJEĆE U VRTLARIJI PECINA
                         </h4>
                         <span class="text">
-                            Otvorili smo vrata naše 104. <br> Proljetne prodaje ukrasnog bilja!
+                            Otvorili smo vrata naše 104. <br> proljetne prodaje ukrasnog bilja!
                         </span>
                     </article>
                 </div>

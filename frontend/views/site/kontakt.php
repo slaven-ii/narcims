@@ -50,7 +50,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="col-2 c-item">
                 <article class="info">
                     <span class="green">Vrtlarija Pecina</span> <br/>
-                    +395 1 3842 892 <br/>
+                    +385 1 3842 892 <br/>
                     <span class="green">Jaroslav Pecina</span> <br/>
                     +385 98 450 666 <br/>
                     <span class="green">Jan Pecina</span> <br/>
