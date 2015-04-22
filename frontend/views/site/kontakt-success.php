@@ -24,7 +24,7 @@ $this->title = 'Vrtlarija Pecina | Upit';
         <div class="wrapper">
             <ul>
                 <li>
-                    <img src="static/ui/img-1-1.jpg" alt="" width="1920" height="843">
+                    <img src="static/ui/img-1-1.jpg" alt="" width="1920" height="500">
                 </li>
             </ul>
         </div>

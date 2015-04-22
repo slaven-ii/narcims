@@ -406,7 +406,7 @@ $this->title = 'Vrtlarija Pecina | O nama';
             <div class="col-12">
                 <div class="col-4 one-col-text has-button">
                     <article class="left">
-                        <h4 class="green">Donacije</h4>
+                        <h4 class="green">Donacije i reference</h4>
                         <span class="text">
                             Udruga Zagrebački Bokci,<br> FloraArt, <br>Grad Sveta Nedelja
                         </span>
