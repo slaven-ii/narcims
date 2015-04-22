@@ -26,7 +26,7 @@ AppAsset::register($this);
     <script src='static/js/vendor/modernizr/modernizr.js'></script>
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/style.css?r=1" />
 
     <link rel="shortcut icon" href="static/ui/meta/favicon.ico" type="image/x-icon">
     <!--<link rel="apple-touch-icon" href="static/ui/meta/touch-icon-iphone.png">-->
@@ -154,7 +154,7 @@ AppAsset::register($this);
     <script src="//maps.googleapis.com/maps/api/js?&sensor=false"></script>
     <script src='static/js/frontend.min.js'></script>
 
-    <script src='static/js/main.js?r=4'></script>
+    <script src='static/js/main.js?r=5'></script>
     <script>
         $("img").each(function(){
             $(this).css("background-image", $(this).attr("src"));

@@ -13,6 +13,11 @@ $this->title = 'Pecina | Početna';
 </nav>
 <!--END NAV-->
 
+<style>
+    .home-box-inner{
+        font-family: 'architects_daughterregular';
+    }
+</style>
 <!--START HEADER-->
 <header class="home-header">
 
@@ -36,9 +41,9 @@ $this->title = 'Pecina | Početna';
                         <span>Radno vrijeme:</span>
                         <div class="home-box-inner">
                             <span class="label">pon-pet:</span>
-                            <span class="val">8h - 18h</span>
+                            <span class="val" style="font-size: 20px;">8h - 18h</span>
                             <span class="label">sub:</span>
-                            <span class="val">8h - 15h</span>
+                            <span class="val" style="font-size: 20px;">8h - 15h</span>
                         </div>
                     </div>
                 </figcaption>
