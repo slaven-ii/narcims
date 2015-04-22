@@ -3926,7 +3926,8 @@ h4 {
   .header-box > span {
     font-size: 16px;
     color: #46803c;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    font-family: 'architects_daughterregular'; }
   .header-box .home-box-inner {
     z-index: 1;
     position: relative;
