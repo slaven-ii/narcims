@@ -227,6 +227,33 @@ function get_files($path){
 
                             </span>
 
+                            <span class="i-block preview">
+                                <?php $image = get_files('povijest'); ?>
+                                <a href="<?php echo $image[0]; ?>" data-lightbox="gallery-7">
+                                    <img src="<?php echo $image[0]; ?>" alt="Image"/>
+                                </a>
+                                <span class="gallery-list">
+                                    <?php
+                                    unset($image[0]);
+                                    foreach($image as $img) { ?>
+                                        <a href="<?php echo $img; ?>" data-lightbox="gallery-7"></a>
+                                    <?php } ?>
+
+                                </span>
+                                <span class="desc">
+                                    <h4>Povijesne slike</h4>
+                                    <span class="text">
+
+                                    </span>
+                                </span>
+                                <img class="icon" src="static/ui/magnifier.png" alt="Image"/>
+
+                            </span>
+                             <span class="i-block preview">
+
+
+                            </span>
+
                         </span>
                             </figure>
                         </div>

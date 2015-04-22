@@ -239,7 +239,8 @@ $this->title = 'Pecina | O nama';
                             od pradjeda do unuka
                         </span>
                         </span>
-                        <a class="btn classic" href="#">galerija</a>
+                        <a class="btn classic" style="width: inherit;" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/galerija'); ?>#gallery-7">galerija</a>
+
                     </article>
                 </div>
                 <div class="col-4 one-col-text">

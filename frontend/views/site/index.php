@@ -106,7 +106,7 @@ $this->title = 'Pecina | Početna';
             <div class="wrapper">
                 <ul>
                     <li>
-                        <img src="static/images/F721-04.jpg" alt="" width="1920" height="843">
+                        <img src="static/images/prodaja_najava.jpg" alt="" width="1920" height="843">
                     </li>
 
                 </ul>
