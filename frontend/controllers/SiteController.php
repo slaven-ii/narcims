@@ -109,7 +109,7 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-    public function actionKontakt()
+    public function actionUpit()
     {
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {

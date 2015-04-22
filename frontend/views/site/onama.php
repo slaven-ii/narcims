@@ -6,7 +6,7 @@
  * Time: 10:32
  */
 /* @var $this yii\web\View */
-$this->title = 'Pecina | O nama';
+$this->title = 'Vrtlarija Pecina | O nama';
 ?>
 
 <?php echo $this->render('_navigation_mobile');?>

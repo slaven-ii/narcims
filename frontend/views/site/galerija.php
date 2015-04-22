@@ -7,7 +7,7 @@
  */
 
 /* @var $this yii\web\View */
-$this->title = 'Pecina | Galerija';
+$this->title = 'Vrtlarija Pecina | Galerija';
 
 function get_files($path){
     $pathFr = Yii::getAlias('@frontend');

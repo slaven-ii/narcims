@@ -9,7 +9,6 @@
 namespace backend\controllers;
 
 use app\models\Page;
-use common\narci\form\NarciForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -111,10 +110,10 @@ class PagesController extends Controller
 
         }
 
-        $data = Page::findOne(['id' => 1]);
+       // $data = Page::findOne(['id' => 1]);
 
 
-        return $this->render('page', ['model' => $data]);
+        return $this->render('page', ['model' => $model]);
 
     }
 

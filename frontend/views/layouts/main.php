@@ -26,7 +26,7 @@ AppAsset::register($this);
     <script src='static/js/vendor/modernizr/modernizr.js'></script>
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="static/css/style.css?r=1" />
+    <link rel="stylesheet" href="/static/css/style.css?r=1" />
 
     <link rel="shortcut icon" href="static/ui/meta/favicon.ico" type="image/x-icon">
     <!--<link rel="apple-touch-icon" href="static/ui/meta/touch-icon-iphone.png">-->
@@ -94,7 +94,7 @@ AppAsset::register($this);
                             +385 98 1658 387 <br/>
                             <!-- <a href="mailto:info@pecina.hr">info@pecina.hr</a> -->
                         </span>
-                            <a class="btn classic" style="margin-bottom: 15px;" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
+                            <a class="btn classic" style="margin-bottom: 15px;" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/upit'); ?>" target="_blank">upit</a>
                         </article>
                     </div>
                     <div class="col-4 one-col-text has-button">

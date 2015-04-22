@@ -26,7 +26,7 @@ function setActive($action){
                     <li><a href="<?php echo Yii::$app->getUrlManager()->createUrl('site/akcije'); ?>" class="">Akcije</a></li>
                     <li><a href="<?php echo Yii::$app->getUrlManager()->createUrl('site/onama'); ?>" class="">O nama</a></li>
                     <li><a href="<?php echo Yii::$app->getUrlManager()->createUrl('site/galerija'); ?>" class="">Galerija</a></li>
-                    <!-- <li><a href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" class="">Kontakt</a></li> -->
+                    <!-- <li><a href="<?php echo Yii::$app->getUrlManager()->createUrl('site/upit'); ?>" class="">Kontakt</a></li> -->
                     <li><a class="" href="#" data-scroll-to="on" data-scroll-to-target=".footer">Kontakt</a></li>
 
                     <!-- list items here -->
@@ -44,7 +44,7 @@ function setActive($action){
             <li><a class="<?php setActive('djelatnosti'); ?>" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/djelatnosti'); ?>">Djelatnosti</a></li>
             <li><a class="<?php setActive('akcije'); ?>" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/akcije'); ?>">Akcije</a></li>
             <li class="logo">
-                <a href="#">
+                <a href="/">
                     <img width="114" height="28" src="static/ui/svg/logo.svg" alt=""/>
                 </a>
             </li>

@@ -7,7 +7,7 @@
  */
 
 /* @var $this yii\web\View */
-$this->title = 'Pecina | Akcije';
+$this->title = 'Vrtlarija Pecina | Akcije';
 ?>
 
 <?php echo $this->render('_navigation_mobile');?>
@@ -206,7 +206,7 @@ $this->title = 'Pecina | Akcije';
                         <span class="text">
                             Za sva dodatna pitanja <br>i nejasnoće, obratite nam se <br>putem e-maila.
                         </span>
-                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/upit'); ?>" target="_blank">upit</a>
                     </article>
                 </div>
             </div>
@@ -269,7 +269,7 @@ $this->title = 'Pecina | Akcije';
                         <span class="text">
                                 Za sva dodatna pitanja <br>i nejasnoće, obratite nam se <br>putem e-maila.
                         </span>
-                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/upit'); ?>" target="_blank">upit</a>
                     </article>
                 </div>
             </div>
@@ -332,7 +332,7 @@ $this->title = 'Pecina | Akcije';
                         <span class="text">
                                 Za sva dodatna pitanja <br>i nejasnoće, obratite nam se <br>putem e-maila.
                         </span>
-                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/upit'); ?>" target="_blank">upit</a>
                     </article>
                 </div>
             </div>

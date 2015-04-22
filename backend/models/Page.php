@@ -34,6 +34,7 @@ class Page extends \yii\db\ActiveRecord
     );
 
     private $custom = array();
+    private $items = array();
 
     private $rules = [
         //[['guid', 'slug', 'type', 'data', 'owner'], 'required'],
@@ -106,9 +107,14 @@ class Page extends \yii\db\ActiveRecord
             //$itemName = $item->getName();
             $this->custom[$item->getName()] = null;
             $this->addRules($item->getValidation());
+            $this->items = $item;
         }
 
+    }
 
+    public function getItems()
+    {
+        return $this->items;
     }
 
     public function getDataAtributes()

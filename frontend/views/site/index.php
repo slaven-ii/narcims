@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'Pecina | Početna';
+$this->title = 'Vrtlarija Pecina';
 ?>
 
 <?php echo $this->render('_navigation_mobile');?>
@@ -99,7 +99,7 @@ $this->title = 'Pecina | Početna';
                         <span class="text">
                             i nabavite potrebnu opremu za <br>vašu vlastitu hobi proizvodnju cvijeća i povrća!
                         </span>
-                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/kontakt'); ?>" target="_blank">upit</a>
+                        <a class="btn classic" href="<?php echo Yii::$app->getUrlManager()->createUrl('site/upit'); ?>" target="_blank">upit</a>
                     </article>
                 </div>
             </div>

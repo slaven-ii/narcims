@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'Pecina | Djelatnosti';
+$this->title = 'Vrtlarija Pecina | Djelatnosti';
 ?>
 
 <?php echo $this->render('_navigation_mobile');?>
@@ -241,9 +241,9 @@ $this->title = 'Pecina | Djelatnosti';
             <div class="col-12">
                 <div class="col-4 one-col-text has-button">
                     <article class="left">
-                        <h4 class="green">stender pro</h4>
+                        <h4 class="green">za profesionalce</h4>
                         <span class="text">
-                            za profesionalce <br> - proizvodnja bilja, projektiranje i uređenje okoliša
+                            Stender Pro <br> supstrati za proizvodnja bilja <br>i uređenje okoliša
                         </span>
                         </span>
                     </article>
@@ -261,10 +261,10 @@ $this->title = 'Pecina | Djelatnosti';
                 <div class="col-4 one-col-text has-button">
                     <article class="right">
                         <h4 class="green">
-                            stender hobby
+                            za hobiste
                         </h4>
                         <span class="text">
-                            za ljubitelje prirodnih vrtova <br> - pravilan rast, cvat<br> miris i donosi plodove
+                            Stender Hobby <br> supstrati za ljubitelje prirodnih vrtova <br> za pravilan rast, cvat miris i plodove
                         </span>
                     </article>
                 </div>
